@@ -1,0 +1,30 @@
+{
+    "theme": "Extractable from GDELT event themes (e.g., protest, diplomatic meeting, economic reform, military action)",
+    "region": "Extractable from GDELT event geographic fields (country, city, region codes, lat/lon)",
+    "use_case": "Can be inferred by combining GDELT event type + actor roles (e.g., peacekeeping, sanctions, treaty negotiation)",
+    "strategic_category": {
+        "military_doctrine": "Extractable when event involves military operations, arms deals, or defense postures",
+        "geopolitical_strategy": "Inferred from cross-border influence, alliances, regional blocs",
+        "national_security": "Extractable when event relates to terrorism, surveillance, emergency laws",
+        "diplomatic_posture": "Extractable from diplomatic events, summits, UN meetings, bilateral talks",
+        "geostrategic_positioning": "Inferred from base agreements, maritime moves, new alliances"
+    },
+    "economic_category": {
+        "development_models": "Inferred from infrastructure projects, economic aid, development programs",
+        "resource_strategies": "Extractable from energy deals, resource management, commodity flows",
+        "trade_tariff_systems": "Extractable from trade deals, tariff changes, WTO disputes",
+        "economic_warfare": "Inferred from sanctions, financial blockades, currency maneuvers"
+    },
+    "civilizational_category": {
+        "cultural_ethos": "Inferred from cultural diplomacy, religious events, festivals",
+        "temporal_orientation": "Inferred from historical commemorations or future-oriented initiatives",
+        "value_systems": "Inferred from moral/religious debates, human rights discourse",
+        "historical_memory": "Extractable from memory politics, reparations, historical disputes",
+        "civilizational_missions": "Inferred from expansionist rhetoric, ideological exports"
+    },
+    "usage_tags": "Extractable from GDELT event keywords, themes, and CAMEO codes",
+    "influence_map": {
+        "influenced_works": "Inferred by tracing referenced treaties, doctrines, or prior events",
+        "modern_applications": "Inferred from current event applications, follow-ups, policy moves"
+    }
+}

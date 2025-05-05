@@ -1,0 +1,562 @@
+[
+  {
+    "section": "Introduction - Sun Wu and his Book",
+    "text": "Ssu-ma Ch‘ien provides a biography of Sun Tzu, stating he was from the Ch‘i State and his Art of War impressed King Ho Lu of Wu.  Ho Lu tested Sun Tzu by having him command 180 women, including the king's concubines. Initially, the women laughed at Sun Tzu's commands. He emphasized the importance of clear orders and the responsibility of the general and officers for their troops' understanding and obedience. When the women continued to disobey, he ordered the execution of the two concubine leaders. The king intervened, wanting to spare his concubines. Sun Tzu asserted his authority as general and proceeded with the execution, replacing the leaders. The women then performed flawlessly.  Ssu-ma Ch‘ien's account also mentions Sun Pin, a descendant of Sun Tzu, who was a skilled military strategist despite having his feet amputated. Sun Tzu is mentioned in other historical texts, including the Shi Ji, describing his role in Wu's military campaigns against Ch‘u and providing advice to King Ho Lu.  The Huai-nan Tzu contains an early reference to Sun Tzu, highlighting the impossibility of success even for a skilled general when rulers and ministers are unwise. Other sources offer conflicting information, like Teng Ming-shih's account of Sun Tzu's lineage, which presents chronological impossibilities.",
+    "meta": {
+      "theme": "Biography and historicity of Sun Tzu",
+      "region": "Ancient China",
+      "use_case": "Military leadership and strategy",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [],
+      "influence_map": [],
+      "chunk_index": 1
+    },
+    "id": "artofwar_001"
+  },
+  {
+    "section": "Introduction - Sun Tzu's Book and its Authenticity",
+    "text": "Ts‘ao Ts‘ao’s preface to his edition of Sun Tzu praises the book's profound insights into warfare, highlighting the balance between peace and military action. He emphasizes Sun Tzu's focus on deliberation, planning, and rapid execution. Ts‘ao Ts‘ao also mentions the existence of 82 chapters, which contrasts with the known 13 chapters. This discrepancy raises questions about the authenticity and potential inclusion of apocryphal works. The Han Shu’s bibliographic entry further complicates matters, listing 82 chapters with diagrams in 9 sections. Theories suggest that the additional chapters might include Sun Tzu's later writings or commentaries, possibly arising from discussions with King Ho Lu. The preface to the Project Gutenberg etext discusses the challenges and importance of translating Sun Tzu accurately, criticizing earlier translations and emphasizing Dr. Giles' scholarly contribution. It notes the renewed interest in Sun Tzu during World War II and acknowledges the influence of Dr. Giles' work on later translations.",
+    "meta": {
+      "theme": "Authorship, dating, and structure of the Art of War",
+      "region": "Ancient China",
+      "use_case": "Military strategy and textual analysis",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [
+        "translation",
+        "textual analysis"
+      ],
+      "influence_map": [],
+      "chunk_index": 2
+    },
+    "id": "artofwar_002"
+  },
+  {
+    "section": "Introduction - Doubts on Sun Tzu's Existence and the Book's Dating",
+    "text": "The absence of Sun Tzu in the Tso Chuan, a comprehensive contemporary record, casts doubt on his existence and role as a general, despite mentions of other figures. Yeh Shui-hsin argues that Sun Tzu’s omission is significant given the Tso Chuan’s inclusion of even lesser-known individuals. He suggests that the Art of War might be the work of a scholar from the late Spring and Autumn or early Warring States period. Yeh Shui-hsin questions the narrative of Sun Tzu’s military exploits, believing it to be fabricated by later followers.  Ch‘en Chen-sun also raises doubts about Sun Tzu's historical placement due to his absence in the Tso Chuan, but acknowledges the potential antiquity of Sun Tzu's and Wu Ch‘i’s works. Pi I-hsun argues for Sun Tzu’s antiquity, pointing to plagiarism in later works and archaic language used in the text. He emphasizes that Sun Tzu's writing reflects practical experience, not mere scholarly theorizing. Internal evidence further suggests the book's early dating, including references to ancient land tenure and chariot warfare. The book’s focus on inter-state conflicts among feudal princes also points to a time before the unification of China.",
+    "meta": {
+      "theme": "Historical debate on Sun Tzu's existence and the book's origins",
+      "region": "Ancient China",
+      "use_case": "Historical analysis and literary criticism",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [
+        "historical analysis",
+        "literary criticism"
+      ],
+      "influence_map": [],
+      "chunk_index": 3
+    },
+    "id": "artofwar_003"
+  },
+  {
+    "section": "Introduction - Wu-Yueh Conflict and Timeline",
+    "text": "Two passages in Sun Tzu allude to the conflict between Wu and Yueh, suggesting the book was written during that period. However, this contradicts Ssu-ma Ch‘ien’s narrative, as Ch‘u was Wu’s main enemy in the earlier period when Sun Tzu supposedly served Ho Lu. The text's absence of mention of Ch‘u indicates it was written after Yueh became Wu’s primary adversary, likely after Wu’s victory over Ch‘u in 506 B.C. A timeline of events helps clarify the chronological discrepancies, highlighting the shift in Wu’s main enemy from Ch‘u to Yueh. The tone of one passage suggests it was written when Wu was facing setbacks against Yueh, further refining the possible timeframe to after 505 B.C.  Considering Ho Lu's death in 496 B.C., the book was either written between 505-496 B.C. during a lull in hostilities, or possibly between 496-494 B.C., or even 482-473 B.C. when Yueh posed a renewed threat. The lack of recognition for Sun Tzu during his time, combined with the Tso Chuan’s silence, suggests he wasn’t prominent. The Sun Tzu legend may have grown retrospectively due to the book’s increasing fame.  The capture of Ying, a significant victory for Wu, might have been attributed to Sun Tzu to bolster his reputation. Sun Hsing-yen’s attempt to explain Sun Tzu’s omission from the Tso Chuan as due to Wu Tzu-hsu taking the credit is weak.",
+    "meta": {
+      "theme": "Dating of the Art of War based on Wu-Yueh conflict",
+      "region": "Ancient China",
+      "use_case": "Historical analysis and textual interpretation",
+      "strategic_category": [
+        "military_doctrine",
+        "geopolitical_strategy"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [
+        "historical analysis",
+        "textual interpretation"
+      ],
+      "influence_map": [],
+      "chunk_index": 4
+    },
+    "id": "artofwar_004"
+  },
+  {
+    "section": "Introduction",
+    "text": "…than that the acknowledged master of strategy, Sun Wu, should be popularly identified with that campaign, at first perhaps only in the sense that his brain conceived and planned it; afterwards, that it was actually carried out by him…It is obvious that any attempt to reconstruct even the outline of Sun Tzu’s life must be based almost wholly on conjecture. With this necessary proviso, I should say that he probably entered the service of Wu about the time of Ho Lu’s accession, and gathered experience, though only in the capacity of a subordinate officer, during the intense military activity which marked the first half of the prince’s reign. If he rose to be a general at all, he certainly was never on an equal footing with the three above mentioned. He was doubtless present at the investment and occupation of Ying, and witnessed Wu’s sudden collapse in the following year. Yueh’s attack at this critical juncture, when her rival was embarrassed on every side, seems to have convinced him that this upstart kingdom was the great enemy against whom every effort would henceforth have to be directed. Sun Wu was thus a well-seasoned warrior when he sat down to write his famous book, which according to my reckoning must have appeared towards the end, rather than the beginning of Ho Lu’s reign. The story of the women may possibly have grown out of some real incident occurring about the same time. As we hear no more of Sun Wu after this from any source, he is hardly likely to have survived his patron or to have taken part in the death-struggle with Yueh, which began with the disaster at Tsuili. If these inferences are approximately correct, there is a certain irony in the fate which decreed that China’s most illustrious man of peace should be contemporary with her greatest writer on war.",
+    "meta": {
+      "theme": "Sun Tzu's Biography",
+      "region": "China",
+      "use_case": "Historical Context",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [
+        "biography",
+        "historical analysis"
+      ],
+      "influence_map": [],
+      "chunk_index": 5
+    },
+    "id": "artofwar_005"
+  },
+  {
+    "section": "The Text of Sun Tzu",
+    "text": "I have found it difficult to glean much about the history of Sun Tzu’s text. The quotations that occur in early authors go to show that the \"13 chapters\" of which Ssu-ma Ch‘ien speaks were essentially the same as those now extant. We have his word for it that they were widely circulated in his day, and can only regret that he refrained from discussing them on that account. Sun Hsing-yen says in his preface: During the Ch‘in and Han dynasties Sun Tzu’s ART OF WAR was in general use amongst military commanders, but they seem to have treated it as a work of mysterious import, and were unwilling to expound it for the benefit of posterity. Thus it came about that Wei Wu was the first to write a commentary on it. As we have already seen, there is no reasonable ground to suppose that Ts‘ao Kung tampered with the text. But the text itself is often so obscure, and the number of editions which appeared from that time onward so great, especially during the T‘ang and Sung dynasties, that it would be surprising if numerous corruptions had not managed to creep in. Towards the middle of the Sung period, by which time all the chief commentaries on Sun Tzu were in existence, a certain Chi T‘ien-pao published a work in 15 CHUAN entitled \"Sun Tzu with the collected commentaries of ten writers.\" There was another text, with variant readings put forward by Chu Fu of Ta-hsing, which also had supporters among the scholars of that period; but in the Ming editions, Sun Hsing-yen tells us, these readings were for some reason or other no longer put into circulation. Thus, until the end of the 18th century, the text in sole possession of the field was one derived from Chi T‘ien-pao’s edition, although no actual copy of that important work was known to have survived. That, therefore, is the text of Sun Tzu which appears in the War section of the great Imperial encyclopedia printed in 1726, the KU CHIN T‘U SHU CHI CH‘ENG. Another copy at my disposal of what is practically the same text, with slight variations, is that contained in the \"Eleven philosophers of the Chou and Ch‘in dynasties\" [1758]. And the Chinese printed in Capt. Calthrop’s first edition is evidently a similar version which has filtered through Japanese channels. So things remained until Sun Hsing-yen [1752-1818], a distinguished antiquarian and classical scholar, who claimed to be an actual descendant of Sun Wu, accidentally discovered a copy of Chi T‘ien-pao’s long-lost work, when on a visit to the library of the Hua-yin temple. Appended to it was the I SHUO of Cheng Yu-Hsien, mentioned in the T‘UNG CHIH, and also believed to have perished. This is what Sun Hsing-yen designates as the \"original edition (or text)\" – a rather misleading name, for it cannot by any means claim to set before us the text of Sun Tzu in its pristine purity. Chi T‘ien-pao was a careless compiler, and appears to have been content to reproduce the somewhat debased version current in his day, without troubling to collate it with the earliest editions then available. Fortunately, two versions of Sun Tzu, even older than the newly discovered work, were still extant, one buried in the T‘UNG TIEN, Tu Yu’s great treatise on the Constitution, the other similarly enshrined in the T‘AI P‘ING YU LAN encyclopedia. In both the complete text is to be found, though split up into fragments, intermixed with other matter, and scattered piecemeal over a number of different sections. Considering that the YU LAN takes us back to the year 983, and the T‘UNG TIEN about 200 years further still, to the middle of the T‘ang dynasty, the value of these early transcripts of Sun Tzu can hardly be overestimated. Yet the idea of utilizing them does not seem to have occurred to anyone until Sun Hsing-yen, acting under Government instructions, undertook a thorough recension of the text.",
+    "meta": {
+      "theme": "Textual History",
+      "region": "China",
+      "use_case": "Preservation and Transmission",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [
+        "textual analysis",
+        "historical analysis"
+      ],
+      "influence_map": [],
+      "chunk_index": 6
+    },
+    "id": "artofwar_006"
+  },
+  {
+    "section": "The Text of Sun Tzu (continued)",
+    "text": "This is his own account: Because of the numerous mistakes in the text of Sun Tzu which his editors had handed down, the Government ordered that the ancient edition [of Chi T‘ien-pao] should be used, and that the text should be revised and corrected throughout. It happened that Wu Nien-hu, the Governor Pi Kua, and Hsi, a graduate of the second degree, had all devoted themselves to this study, probably surpassing me therein. Accordingly, I have had the whole work cut on blocks as a textbook for military men. The three individuals here referred to had evidently been occupied on the text of Sun Tzu prior to Sun Hsing-yen’s commission, but we are left in doubt as to the work they really accomplished. At any rate, the new edition, when ultimately produced, appeared in the names of Sun Hsing-yen and only one co-editor Wu Jen-shi. They took the \"original edition\" as their basis, and by careful comparison with older versions, as well as the extant commentaries and other sources of information such as the I SHUO, succeeded in restoring a very large number of doubtful passages, and turned out, on the whole, what must be accepted as the closes approximation we are ever likely to get to Sun Tzu’s original work. This is what will hereafter be denominated the \"standard text.\" The copy which I have used belongs to a reissue dated 1877. it is in 6 PEN, forming part of a well-printed set of 23 early philosophical works in 83 PEN. It opens with a preface by Sun Hsing-yen (largely quoted in this introduction), vindicating the traditional view of Sun Tzu’s life and performances, and summing up in remarkably concise fashion the evidence in its favor. This is followed by Ts‘ao Kung’s preface to his edition, and the biography of Sun Tzu from the SHIH CHI, both translated above. Then come, firstly, Cheng Yu-hsien’s I SHUO, with author’s preface, and next, a short miscellany of historical and bibliographical information entitled SUN TZU HSU LU, compiled by Pi I-hsun. As regards the body of the work, each separate sentence is followed by a note on the text, if required, and then by the various commentaries appertaining to it, arranged in chronological order. These we shall now proceed to discuss briefly, one by one.",
+    "meta": {
+      "theme": "Textual History (continued)",
+      "region": "China",
+      "use_case": "Preservation and Transmission",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": [
+        "textual analysis",
+        "historical analysis"
+      ],
+      "influence_map": [],
+      "chunk_index": 7
+    },
+    "id": "artofwar_007"
+  },
+  {
+    "section": "Introduction and Bibliography",
+    "text": "ih Kung, a legendary personage who is said to have bestowed it on Chang Liang (d. 187 B.C.) in an interview on a bridge. But here again, the style is not that of works dating from the Ch‘in or Han period. The Han Emperor Kuang Wu [25-57 A.D.] apparently quotes from it in one of his proclamations; but the passage in question may have been inserted later on,\n\nBesides the tradition which makes him a former minister of Chou Hsin, two other accounts of him are there given, according to which he would appear to have been ﬁrst raised from a humble private station by Wen Wang. We shall not be far out if we refer it to the Northern Sung period [420-478 A.D.], or somewhat earlier. [6] LI WEI KUNG WEN TUI, in 3 sections. Written in the form of a dialogue between T‘ai Tsung and his great general Li Ching, it is usually ascribed to the latter. Com- petent authorities consider it a forgery, though the author was evidently well versed in the art of war. [7] LI CHING PING FA (not to be confounded with the foregoing) is a short treatise in 8 chapters, preserved in the T‘ung Tien, but not published separately. This fact explains its omission from the SSU K‘U CH‘UAN SHU. [8] WU CH‘I CHING, in 1 CHUAN. Attributed to the legendary minister Feng Hou, with exegetical notes by Kung-sun Hung of the Han dynasty (d. 121 B.C.), and said to have been eulogized by the celebrated general Ma Lung (d. 300 A.D.). Yet the earliest mention of it is in the SUNG CHIH. Although a forgery, the work is well put together. Considering the high popular estimation in which Chu-ko Liang has always been held, it is not surprising to ﬁnd more than one work on war ascribed to his pen. Such are (1) the SHIH LIU TS‘E (1 CHUAN), preserved in the YUNG LO TA TIEN; (2) CHIANG YUAN (1 CHUAN); and (3) HSIN SHU (1 CHUAN), which steals wholesale from Sun Tzu. None of these has the slightest claim to be considered genuine.\n\nMost of the large Chinese encyclopedias contain extensive sections devoted to the literature of war. The previously mentioned works are the oldest Chinese treatises on war, after Sun Tzu. The notes on each have been drawn principally from the SSU K‘U CH‘UAN SHU CHIEN MING MU LU.",
+    "meta": {
+      "theme": "Ancient Chinese Military Texts",
+      "region": "China",
+      "use_case": "Historical Analysis, Military History",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [
+        "historical_memory"
+      ],
+      "usage_tags": "bibliography, source analysis, authenticity",
+      "influence_map": [],
+      "chunk_index": 8
+    },
+    "id": "artofwar_008"
+  },
+  {
+    "section": "Chapter 2: Laying Plans",
+    "text": "1. Sun Tzu said: The art of war is of vital importance to the State.\n2. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected.\n3. The art of war, then, is governed by ﬁve constant factors, to be taken into account in one’s deliberations, when seeking to determine the conditions obtaining in the ﬁeld.\n4. These are: (1) The Moral Law; (2) Heaven; (3) Earth; (4) The Com- mander; (5) Method and discipline.\n5., 6. The MORAL LAW causes the people to be in complete accord with their ruler, so that they will follow him regardless of their lives, undismayed by any danger.\n7. HEAVEN signiﬁes night and day, cold and heat, times and seasons.\n8. EARTH comprises distances, great and small; danger and security; open ground and narrow passes; the chances of life and death.\n9. The COMMANDER stands for the virtues of wisdom, sincerely, benevol- ence, courage and strictness.\n10. By METHOD AND DISCIPLINE are to be understood the marshaling of the army in its proper subdivisions, the graduations of rank among the ofﬁcers, the maintenance of roads by which supplies may reach the army, and the control of military expenditure.\n11. These ﬁve heads should be familiar to every general: he who knows them will be victorious; he who knows them not will fail.\n12. Therefore, in your deliberations, when seeking to determine the military conditions, let them be made the basis of a comparison, in this wise:\n13. (1) Which of the two sovereigns is imbued with the Moral law?\n(2) Which of the two generals has most ability?\n(3) With whom lie the advantages derived from Heaven and Earth?\n(4) On which side is discipline most rigorously enforced?\n(5) Which army is stronger?\n(6) On which side are ofﬁcers and men more highly trained?\n(7) In which army is there the greater constancy both in reward and pun- ishment?\n14. By means of these seven considerations I can forecast victory or defeat.\n15. The general that hearkens to my counsel and acts upon it, will con- quer: –let such a one be retained in command! The general that hearkens not to my counsel nor acts upon it, will suffer defeat: –let such a one be dismissed!\n16. While heading the proﬁt of my counsel, avail yourself also of any helpful circumstances over and beyond the ordinary rules.\n17. According as circumstances are favorable, one should modify one’s plans.\n18. All warfare is based on deception.\n19. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy be- lieve we are far away; when far away, we must make him believe we are near.\n20. Hold out baits to entice the enemy. Feign disorder, and crush him.\n21. If he is secure at all points, be prepared for him. If he is in superior strength, evade him.\n22. If your opponent is of choleric temper, seek to irritate him. Pretend to be weak, that he may grow arrogant.\n23. If he is taking his ease, give him no rest. If his forces are united, separate them.\n24. Attack him where he is unprepared, appear where you are not expected.\n25. These military devices, leading to victory, must not be divulged before- hand.\n26. Now the general who wins a battle makes many calculations in his temple ere the battle is fought. The general who loses a battle makes but few calculations beforehand. Thus do many calculations lead to victory, and few calculations to defeat: how much more no calcu- lation at all! It is by attention to this point that I can foresee who is likely to win or lose.",
+    "meta": {
+      "theme": "Planning and Deception in Warfare",
+      "region": "China",
+      "use_case": "Military Strategy, Tactical Planning",
+      "strategic_category": [
+        "military_doctrine",
+        "geopolitical_strategy"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": "deception, planning, foresight, adaptability",
+      "influence_map": [],
+      "chunk_index": 9
+    },
+    "id": "artofwar_009"
+  },
+  {
+    "section": "Excerpt 1",
+    "text": "uan alludes to the story of Han Hsin who, when about to attack the vastly superior army of Chao, which was strongly entrenched in the city of Ch‘eng-an, said to his ofﬁcers: \"Gentlemen, we are going to annihilate the enemy, and shall meet again at dinner.\" The ofﬁcers hardly took his words seriously, and gave a very dubious assent. But Han Hsin had already worked out in his mind the details of a clever stratagem, whereby, as he foresaw, he was able to capture the city and inﬂict a crushing defeat on his adversary.\"] 9. Neither is it the acme of excellence if you ﬁght and conquer and the whole Empire says, \"Well done!\" [True excellence being, as Tu Mu says: \"To plan secretly, to move surrepti-tiously, to foil the enemy’s intentions and balk his schemes, so that at last the day may be won without shedding a drop of blood.\" Sun Tzu reserves his approbation for things that \"the world’s coarse thumb And ﬁnger fail to plumb.\" ] 10. To lift an autumn hair is no sign of great strength; [\"Autumn\" hair\" is explained as the fur of a hare, which is ﬁnest in au-tumn, when it begins to grow afresh. The phrase is a very common one in Chinese writers.] to see the sun and moon is no sign of sharp sight; to hear the noise of thunder is no sign of a quick ear. CHAPTER 5. TACTICAL DISPOSITIONS 45 [Ho Shih gives as real instances of strength, sharp sight and quick hearing: Wu Huo, who could lift a tripod weighing 250 stone; Li Chu, who at a distance of a hundred paces could see objects no bigger than a mustard seed; and Shih K‘uang, a blind musician who could hear the footsteps of a mosquito.] 11. What the ancients called a clever ﬁghter is one who not only wins, but excels in winning with ease. [The last half is literally \"one who, conquering, excels in easy conquering.\" Mei Yao-ch‘en says: \"He who only sees the obvious, wins his battles with difﬁculty; he who looks below the surface of things, wins with ease.\"] 12. Hence his victories bring him neither reputation for wisdom nor credit for courage. [Tu Mu explains this very well: \"Inasmuch as his victories are gained over circumstances that have not come to light, the world as large knows nothing of them, and he wins no reputation for wisdom; inasmuch as the hostile state submits before there has been any bloodshed, he receives no credit for courage.\"] 13. He wins his battles by making no mistakes. [Ch‘en Hao says: \"He plans no superﬂuous marches, he devises no futile attacks.\" The connection of ideas is thus explained by Chang Yu: \"One who seeks to conquer by sheer strength, clever though he may be at win-ning pitched battles, is also liable on occasion to be vanquished; whereas he who can look into the future and discern conditions that are not yet manifest, will never make a blunder and therefore invariably win.\"] Making no mistakes is what establishes the certainty of victory, for it means conquering an enemy that is already defeated. 14. Hence the skillful ﬁghter puts himself into a position which makes defeat impossible, and does not miss the moment for defeating the enemy. [A \"counsel of perfection\" as Tu Mu truly observes. \"Position\" need not be conﬁned to the actual ground occupied by the troops. It includes all the arrangements and preparations which a wise general will make to increase the safety of his army.] 15. Thus it is that in war the victorious strategist only seeks battle after the victory has been won, whereas he who is destined to defeat ﬁrst ﬁghts and afterwards looks for victory. [Ho Shih thus expounds the paradox: \"In warfare, ﬁrst lay plans which will ensure victory, and then lead your army to battle; if you will not begin with stratagem but rely on brute strength alone, victory will no longer be assured.\"]",
+    "meta": {
+      "theme": "Tactical Doctrine",
+      "region": "Ancient China",
+      "use_case": "Military Strategy",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "stratagem",
+        "deception",
+        "positioning",
+        "planning"
+      ],
+      "influence_map": [],
+      "chunk_index": 10
+    },
+    "id": "artofwar_010"
+  },
+  {
+    "section": "Chapter 6 Energy Excerpt",
+    "text": "CHAPTER 5. TACTICAL DISPOSITIONS 46 16. The consummate leader cultivates the moral law, and strictly adheres to method and discipline; thus it is in his power to control success. 17. In respect of military method, we have, ﬁrstly, Measurement; secondly, Es-timation of quantity; thirdly, Calculation; fourthly, Balancing of chances; ﬁfthly, Victory. 18. Measurement owes its existence to Earth; Estimation of quantity to Meas-urement; Calculation to Estimation of quantity; Balancing of chances to Calculation; and Victory to Balancing of chances.",
+    "meta": {
+      "theme": "Principles of War",
+      "region": "Ancient China",
+      "use_case": "Military Leadership & Planning",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "discipline",
+        "methodology",
+        "calculation",
+        "planning"
+      ],
+      "influence_map": [],
+      "chunk_index": 11
+    },
+    "id": "artofwar_011"
+  },
+  {
+    "section": "Maneuvering",
+    "text": "march of Chao She in 270 B.C. to relieve the town of O-yu, which was closely invested by a Ch‘in army. The King of Chao ﬁrst consulted Lien P‘o on the advisability of attempting a relief, but the latter thought the distance too great, and the intervening country too rugged and difﬁcult. His Majesty then turned to Chao She, who fully admitted the hazardous nature of the march, but ﬁnally said: \"We shall be like two rats ﬁghting in a whole–and the pluckier one will win!\" So he left the capital with his army, but had only gone a distance of 30 LI when he stopped and began throwing up entrenchments. For 28 days he continued strengthening his fortiﬁcations, and took care that spies should carry the intelligence to the enemy. The Ch‘in general was overjoyed, and attributed his adversary’s tardiness to the fact that the beleaguered city was in the Han State, and thus not actually part of Chao territory. But the spies had no sooner departed than Chao She began a forced march lasting for two days and one night, and arrive on the scene of action with such astonishing rapidity that he was able to occupy a commanding position on the \"North hill\" before the enemy had got wind of his movements. A crushing defeat followed for the Ch‘in forces, who were obliged to raise the siege of O-yu in all haste and retreat across the border.\n\n5. Maneuvering with an army is advantageous; with an undisciplined multitude, most dangerous.\n\n6. If you set a fully equipped army in march in order to snatch an advantage, the chances are that you will be too late. On the other hand, to detach a ﬂying column for the purpose involves the sacriﬁce of its baggage and stores.\n\n7. Thus, if you order your men to roll up their buff-coats, and make forced marches without halting day or night, covering double the usual distance at a stretch, doing a hundred LI in order to wrest an advantage, the leaders of all your three divisions will fall into the hands of the enemy.\n\n8. The stronger men will be in front, the jaded ones will fall behind, and on this plan only one-tenth of your army will reach its destination.\n\n9. If you march ﬁfty LI in order to outmaneuver the enemy, you will lose the leader of your ﬁrst division, and only half your force will reach the goal.\n\n10. If you march thirty LI with the same object, two-thirds of your army will arrive.\n\n11. We may take it then that an army without its baggage-train is lost; without provisions it is lost; without bases of supply it is lost.",
+    "meta": {
+      "theme": "Maneuvering and Logistics",
+      "region": "Ancient China",
+      "use_case": "Military Operations",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [
+        "resource_strategies"
+      ],
+      "civilizational_category": [],
+      "usage_tags": [
+        "forced march",
+        "supply lines",
+        "deception"
+      ],
+      "influence_map": [],
+      "chunk_index": 12
+    },
+    "id": "artofwar_012"
+  },
+  {
+    "section": "Maneuvering (continued)",
+    "text": "12. We cannot enter into alliances until we are acquainted with the designs of our neighbors.\n\n13. We are not ﬁt to lead an army on the march unless we are familiar with the face of the country–its mountains and forests, its pitfalls and precipices, its marshes and swamps.\n\n14. We shall be unable to turn natural advantage to account unless we make use of local guides.\n\n15. In war, practice dissimulation, and you will succeed.\n\n16. Whether to concentrate or to divide your troops, must be decided by circumstances.\n\n17. Let your rapidity be that of the wind, your compactness that of the forest.\n\n18. In raiding and plundering be like ﬁre, is immovability like a mountain.\n\n19. Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.\n\n20. When you plunder a countryside, let the spoil be divided amongst your men; when you capture new territory, cut it up into allotments for the beneﬁt of the soldiery.\n\n21. Ponder and deliberate before you make a move.",
+    "meta": {
+      "theme": "Terrain, Deception, and Planning",
+      "region": "Ancient China",
+      "use_case": "Military Operations",
+      "strategic_category": [
+        "military_doctrine",
+        "geopolitical_strategy"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "terrain analysis",
+        "local guides",
+        "deception",
+        "strategy"
+      ],
+      "influence_map": [],
+      "chunk_index": 13
+    },
+    "id": "artofwar_013"
+  },
+  {
+    "section": "Chapter 10. The Army on the March",
+    "text": "11. All armies prefer high ground to low… and sunny places to dark.\n12. If you are careful of your men… and camp on hard ground, the army will be free from disease of every kind… and this will spell victory.\n13. When you come to a hill or a bank, occupy the sunny side, with the slope on your right rear. Thus you will at once act for the benefit of your soldiers and utilize the natural advantages of the ground.\n14. When, in consequence of heavy rains up-country, a river which you wish to ford is swollen and flecked with foam, you must wait until it subsides.\n15. Country in which there are precipitous cliffs with torrents running between, deep natural hollows… confined places… tangled thickets… quagmires… and crevasses, should be left with all possible speed and not approached.\n16. While we keep away from such places, we should get the enemy to approach them; while we face them, we should let the enemy have them on his rear.\n17. If in the neighborhood of your camp there should be any hilly country, ponds surrounded by aquatic grass, hollow basins filled with reeds, or woods with thick undergrowth, they must be carefully routed out and searched; for these are places where men in ambush or insidious spies are likely to be lurking…\n18. When the enemy is close at hand and remains quiet, he is relying on the natural strength of his position…\n19. When he keeps aloof and tries to provoke a battle, he is anxious for the other side to advance…\n20. If his place of encampment is easy of access, he is tendering a bait.\n21. Movement amongst the trees of a forest shows that the enemy is advancing… The appearance of a number of screens in the midst of thick grass means that the enemy wants to make us suspicious…\n22. The rising of birds in their flight is the sign of an ambuscade… Startled beasts indicate that a sudden attack is coming.\n23. When there is dust rising in a high column, it is the sign of chariots advancing; when the dust is low, but spread over a wide area, it betokens the approach of infantry… When it branches out in different directions, it shows that parties have been sent to collect firewood. A few clouds of dust moving to and fro signify that the army is encamping…",
+    "meta": {
+      "theme": "Marching and Terrain Analysis",
+      "region": "General",
+      "use_case": "Tactical Guidance during Marches",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "terrain",
+        "marching",
+        "reconnaissance",
+        "enemy behavior"
+      ],
+      "influence_map": [],
+      "chunk_index": 14
+    },
+    "id": "artofwar_014"
+  },
+  {
+    "section": "Chapter 10. The Army on the March (continued)",
+    "text": "24. Humble words and increased preparations are signs that the enemy is about to advance… Violent language and driving forward as if to the attack are signs that he will retreat.\n25. When the light chariots come out first and take up a position on the wings, it is a sign that the enemy is forming for battle.\n26. Peace proposals unaccompanied by a sworn covenant indicate a plot…\n27. When there is much running about… and the soldiers fall into rank, it means that the critical moment has come.\n28. When some are seen advancing and some retreating, it is a lure.\n29. When the soldiers stand leaning on their spears, they are faint from want of food.\n30. If those who are sent to draw water begin by drinking themselves, the army is suffering from thirst…\n31. If the enemy sees an advantage to be gained and makes no effort to secure it, the soldiers are exhausted.\n32. If birds gather on any spot, it is unoccupied… Clamor by night betokens nervousness.\n33. If there is disturbance in the camp, the general’s authority is weak. If the banners and flags are shifted about, sedition is afoot. If the officers are angry, it means that the men are weary…\n34. When an army feeds its horses with grain and kills its cattle for food… and when the men do not hang their cooking-pots over the camp-fires, showing that they will not return to their tents, you may know that they are determined to fight to the death…\n35. The sight of men whispering together in small knots or speaking in subdued tones points to disaffection amongst the rank and file.\n36. Too frequent rewards signify that the enemy is at the end of his resources… too many punishments betray a condition of dire distress…\n37. To begin by bluster, but afterwards to take fright at the enemy’s numbers, shows a supreme lack of intelligence…\n38. When envoys are sent with compliments in their mouths, it is a sign that the enemy wishes for a truce…\n39. If the enemy’s troops march up angrily and remain facing ours for a long time without either joining battle or taking themselves off again, the situation is one that demands great vigilance and circumspection…\n40. If our troops are no more in number than the enemy, that is amply sufficient; it only means that no direct attack can be made… What we can do is simply to concentrate all our available strength, keep a close watch on the enemy, and obtain reinforcements…\n41. He who exercises no forethought but makes light of his opponents is sure to be captured by them…\n42. If soldiers are punished before they have grown attached to you, they will not prove submissive; and, unless submissive, then will be practically useless. If, when the soldiers have become attached to you, punishments are not enforced, they will still be unless.\n43. Therefore soldiers must be treated in the first instance with humanity, but kept under control by means of iron discipline… This is a certain road to victory.\n44. If in training soldiers commands are habitually enforced, the army will be well-disciplined; if not, its discipline will be bad.\n45. If a general shows confidence in his men but always insists on his orders being obeyed… the gain will be mutual…",
+    "meta": {
+      "theme": "Interpreting Enemy Behavior and Troop Management",
+      "region": "General",
+      "use_case": "Tactical Analysis and Leadership",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "enemy behavior",
+        "intelligence",
+        "discipline",
+        "leadership",
+        "troop morale"
+      ],
+      "influence_map": [],
+      "chunk_index": 15
+    },
+    "id": "artofwar_015"
+  },
+  {
+    "section": "Chapter 12. The Nine Situations (part 1)",
+    "text": "Ground on which each side has liberty of movement is open ground. Ground which forms the key to three contiguous states, so that he who occupies it first has most of the Empire at his command, is a ground of intersecting highways. When an army has penetrated into the heart of a hostile country, leaving a number of fortified cities in its rear, it is serious ground. Mountain forests, rugged steeps, marshes and fens–all country that is hard to traverse: this is difficult ground. Ground which is reached through narrow gorges, and from which we can only retire by tortuous paths, so that a small number of the enemy would suffice to crush a large body of our men: this is hemmed in ground. Ground on which we can only be saved from destruction by fighting without delay, is desperate ground. On dispersive ground, therefore, fight not. On facile ground, halt not. On contentious ground, attack not. On open ground, do not try to block the enemy’s way. On the ground of intersecting highways, join hands with your allies. On serious ground, gather in plunder. In difficult ground, keep steadily on the march. On hemmed-in ground, resort to stratagem. On desperate ground, fight.",
+    "meta": {
+      "theme": "Nine Grounds and their Variations",
+      "region": "Ancient China",
+      "use_case": "Warfare",
+      "strategic_category": [
+        "military_doctrine",
+        "geopolitical_strategy"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "terrain analysis",
+        "tactical principles"
+      ],
+      "influence_map": [],
+      "chunk_index": 16
+    },
+    "id": "artofwar_016"
+  },
+  {
+    "section": "Chapter 12. The Nine Situations (part 2)",
+    "text": "Those who were called skillful leaders of old knew how to drive a wedge between the enemy’s front and rear; to prevent co-operation between his large and small divisions; to hinder the good troops from rescuing the bad, the officers from rallying their men. When the enemy’s men were united, they managed to keep them in disorder. When it was to their advantage, they made a forward move; when otherwise, they stopped still. If asked how to cope with a great host of the enemy in orderly array and on the point of marching to the attack, I should say: \"Begin by seizing something which your opponent holds dear; then he will be amenable to your will.\" Rapidity is the essence of war: take advantage of the enemy’s unreadiness, make your way by unexpected routes, and attack unguarded spots. The following are the principles to be observed by an invading force: The further you penetrate into a country, the greater will be the solidarity of your troops, and thus the defenders will not prevail against you. Make forays in fertile country in order to supply your army with food. Carefully study the well-being of your men, and do not overtax them. Concentrate your energy and hoard your strength. Keep your army continually on the move, and devise unfathomable plans.",
+    "meta": {
+      "theme": "Principles of Warfare and Invasion",
+      "region": "Ancient China",
+      "use_case": "Warfare",
+      "strategic_category": [
+        "military_doctrine",
+        "geopolitical_strategy"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "leadership",
+        "deception",
+        "speed",
+        "logistics",
+        "troop welfare"
+      ],
+      "influence_map": [],
+      "chunk_index": 17
+    },
+    "id": "artofwar_017"
+  },
+  {
+    "section": "Chapter 12. The Nine Situations (part 3)",
+    "text": "Throw your soldiers into positions whence there is no escape, and they will prefer death to flight. If they will face death, there is nothing they may not achieve. Officers and men alike will put forth their uttermost strength. Soldiers when in desperate straits lose the sense of fear. If there is no place of refuge, they will stand firm. If they are in hostile country, they will show a stubborn front. If there is no help for it, they will fight hard. Thus, without waiting to be marshaled, the soldiers will be constantly on the qui vive; without waiting to be asked, they will do your will; without restrictions, they will be faithful; without giving orders, they can be trusted. Prohibit the taking of omens, and do away with superstitious doubts. Then, until death itself comes, no calamity need be feared. If our soldiers are not overburdened with money, it is not because they have a distaste for riches; if their lives are not unduly long, it is not because they are disinclined to longevity. On the day they are ordered out to battle, your soldiers may weep, those sitting up bedewing their garments, and those lying down letting the tears run down their cheeks. But let them once be brought to bay, and they will display the courage of a Chu or a Kuei.",
+    "meta": {
+      "theme": "Motivation, Discipline, and Courage in Soldiers",
+      "region": "Ancient China",
+      "use_case": "Warfare",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "psychology of warfare",
+        "discipline",
+        "courage",
+        "superstition"
+      ],
+      "influence_map": [],
+      "chunk_index": 18
+    },
+    "id": "artofwar_018"
+  },
+  {
+    "section": "Chapter 12. The Nine Situations (part 4)",
+    "text": "The skillful tactician may be likened to the SHUAI-JAN. Now the SHUAI-JAN is a snake that is found in the Ch’ang mountains. Strike at its head, and you will be attacked by its tail; strike at its tail, and you will be attacked by its head; strike at its middle, and you will be attacked by head and tail both. Asked if an army can be made to imitate the SHUAI-JAN, I should answer, Yes. For the men of Wu and the men of Yueh are enemies; yet if they are crossing a river in the same boat and are caught by a storm, they will come to each other’s assistance just as the left hand helps the right. Hence it is not enough to put one’s trust in the tethering of horses, and the burying of chariot wheels in the ground. The principle on which to manage an army is to set up one standard of courage which all must reach. How to make the best of both strong and weak–that is a question involving the proper use of ground. Thus the skillful general conducts his army just as though he were leading a single man, willy-nilly, by the hand. It is the business of a general to be quiet and thus ensure secrecy; upright and just, and thus maintain order.",
+    "meta": {
+      "theme": "Adaptability, Unity, and Leadership in an Army",
+      "region": "Ancient China",
+      "use_case": "Warfare",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "adaptability",
+        "unity",
+        "courage",
+        "leadership",
+        "terrain analysis"
+      ],
+      "influence_map": [],
+      "chunk_index": 19
+    },
+    "id": "artofwar_019"
+  },
+  {
+    "section": "11.51-62",
+    "text": "It is the soldier’s disposition to offer an obstinate resistance when surrounded, to fight hard when he cannot help himself, and to obey promptly when he has fallen into danger. [Chang Yu alludes to the conduct of Pan Ch‘ao’s devoted followers in 73 A.D. ...For the sequel of this adventure, see chap. XII. ss. 1, note.] 52. We cannot enter into alliance with neighboring princes until we are acquainted with their designs. We are not fit to lead an army on the march unless we are familiar with the face of the country–its mountains and forests, its pitfalls and precipices, its marshes and swamps. We shall be unable to turn natural advantages to account unless we make use of local guides. [These three sentences are repeated from VII. SS. 12-14... the mistake not being discovered until they had almost arrived.] 53. To be ignored of any one of the following four or five principles does not befit a warlike prince. 54. When a warlike prince attacks a powerful state, his generalship shows itself in preventing the concentration of the enemy’s forces. He overawes his opponents, and their allies are prevented from joining against him. [Mei Tao-ch‘en constructs one of the chains of reasoning that are so much affected by the Chinese... The following gives a stronger meaning: \"If the great state has once been defeated (before she has had time to summon her allies), then the lesser states will hold aloof and refrain from massing their forces.\" ... Sun Tzu is condemning this attitude of cold-blooded selfishness and haughty isolation.] 55. Hence he does not strive to ally himself with all and sundry, nor does he foster the power of other states. He carries out his own secret designs, keeping his antagonists in awe. [The train of thought, as said by Li Ch‘uan, appears to be this: ... his prestige enable him to dispense with external friendships.\"] Thus he is able to capture their cities and overthrow their kingdoms. 56. Bestow rewards without regard to rule, issue orders without regard to previous arrangements; and you will be able to handle a whole army as though you had to do with but a single man. [Cf. supra, ss. 34.] 57. Confront your soldiers with the deed itself; never let them know your design. When the outlook is bright, bring it before their eyes; but tell them nothing when the situation is gloomy. 58. Place your army in deadly peril, and it will survive; plunge it into desperate straits, and it will come off in safety. [These words of Sun Tzu were once quoted by Han Hsin... These are higher tactics than we should have been capable of.\" [See CH‘IEN HAN SHU, ch. 34, ff. 4, 5.] ] 59. For it is precisely when a force has fallen into harm’s way that is capable of striking a blow for victory. 60. Success in warfare is gained by carefully accommodating ourselves to the enemy’s purpose. 61. By persistently hanging on the enemy’s flank, we shall succeed in the long run in killing the commander-in-chief. 62. This is called ability to accomplish a thing by sheer cunning.",
+    "meta": {
+      "theme": "Military Strategy and Tactics",
+      "region": "Ancient China",
+      "use_case": "Warfare",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "tactical_deception",
+        "leadership",
+        "siege warfare",
+        "military_intelligence"
+      ],
+      "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+      },
+      "chunk_index": 20
+    },
+    "id": "artofwar_020"
+  },
+  {
+    "section": "12. THE NINE SITUATIONS 109-114",
+    "text": "CHAPTER 12. THE NINE SITUATIONS 109 [These three sentences are repeated from VII. SS. 12-14 – in order to em- phasize their importance... I prefer to regard them as interpolated here in order to form an antecedent to the fol- lowing words... such as Livy records (XXII. 13): ...the mistake not being discovered until they had almost arrived.] 53. To be ignored of any one of the following four or five principles does not befit a warlike prince. 54. When a warlike prince attacks a powerful state... [Mei Tao-ch‘en constructs one of the chains of reasoning... The fol- lowing gives a stronger meaning...Ch‘en Hao and Chang Yu take the sentence in quite another way... under Shih Huang Ti... haughty isolation.] 55. Hence he does not strive to ally himself with all and sundry...[The train of thought... external friendships.\"] Thus he is able to capture their cities and overthrow their kingdoms. [This paragraph... haughty isolation.] 56. Bestow rewards without regard to rule...[Wu Tzu (ch. 3) less wisely says... \"your arrangements should not be divulged beforehand.\" ...your plans be known, but war often necessitates the entire reversal of them at the last moment.] ... and you will be able to handle a whole army as though you had to do with but a single man. [Cf. supra, ss. 34.] 57. Confront your soldiers with the deed itself; never let them know your design. [Literally... applicable to a general than to a judge.] ... When the outlook is bright, bring it before their eyes; but tell them nothing when the situation is gloomy. 58. Place your army in deadly peril, and it will survive; plunge it into desperate straits, and it will come off in safety. [These words... [See CH‘IEN HAN SHU, ch. 34, ff. 4, 5.] ] 59. For it is precisely when a force has fallen into harm’s way that is capable of striking a blow for victory. [Danger has a bracing effect.] 60. Success in warfare is gained by carefully accommodating ourselves to the enemy’s purpose. [Ts‘ao Kung says: \"Feign stupidity\"...we deliver our attack.] 61. By persistently hanging on the enemy’s ﬂank...[I understand the first four words to mean...But such a violent displacement of characters is quite indefensible.] ... we shall succeed in the long run in killing the commander-in-chief. [Always a great point with the Chinese.] 62. This is called ability to accomplish a thing by sheer cunning.",
+    "meta": {
+      "theme": "Military Strategy and Tactics",
+      "region": "Ancient China",
+      "use_case": "Warfare",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "tactical_deception",
+        "leadership",
+        "siege warfare",
+        "military_intelligence"
+      ],
+      "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+      },
+      "chunk_index": 21
+    },
+    "id": "artofwar_021"
+  },
+  {
+    "section": "The Use of Spies",
+    "text": "P‘o-t‘ai, having reared long scaling-ladders against the city walls, lighted the beacon-fire. Wei Po’s men raced up on seeing the signal and began climbing the ladders, while others were drawn up by ropes. More than a hundred of Lo Shang’s soldiers entered the city this way, every one of whom was beheaded. Li Hsiung then charged with all his forces and routed the enemy. [This happened in 303 A.D. The source of this story is unknown, as it's not in the biographies of Li Hsiung or his father Li T‘e.]\n\nCONVERTED SPIES: Getting hold of the enemy’s spies and using them for our own purposes. This involves bribing them and inducing them to carry back false information and spy on their own countrymen. Alternatively, we can pretend not to have detected them, but let them carry away a false impression.  Several commentators accept this alternative, but it contradicts Sun Tzu’s subsequent remarks about treating converted spies generously. Converted spies were used successfully by T‘ien Tan in his defense of Chi-mo, by Chao She on his march to O-yu, and by Fan Chu in 260 B.C., when Lien P‘o campaigned defensively against Ch‘in.  The King of Chao disapproved of Lien P‘o’s cautious methods and believed reports from spies secretly working for Fan Chu. They claimed Ch‘in feared Chao Kua becoming general and considered Lien P‘o an easy opponent. Chao Kua, son of Chao She, believed no commander could stand against him. His father worried about his conceit and predicted Kua would ruin Chao’s armies if appointed general. Despite protests, Kua replaced Lien P‘o, proving no match for Po Ch‘i. His army was divided, his communications cut, and after 46 days of resistance, he was killed and his 400,000 men slaughtered.",
+    "meta": {
+      "theme": "Espionage and Deception",
+      "region": "Ancient China",
+      "use_case": "Military Strategy",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "spying",
+        "conversion",
+        "deception"
+      ],
+      "influence_map": [],
+      "chunk_index": 22
+    },
+    "id": "artofwar_022"
+  },
+  {
+    "section": "The Use of Spies (continued)",
+    "text": "DOOMED SPIES: Doing things openly for deception, letting our spies know and report them to the enemy. We deceive our own spies into thinking they’ve been exposed. When captured, they’ll give a false report, leading the enemy to take wrong measures. The spies will then be put to death. Examples include prisoners released by Pan Ch‘ao against Yarkand and T‘ang Chien, sent in 630 A.D. to deceive the Turkish Kahn Chieh-li until Li Ching could attack.  Contrary to claims, T‘ang Chien escaped and lived until 656. Li I-chi played a similar role in 203 B.C., negotiating peace with Ch‘i for the King of Han, but was boiled alive when Han Hsin attacked Ch‘i without warning.\n\nSURVIVING SPIES bring back news from the enemy’s camp. They form a regular part of the army. They must be keen, robust, strong, courageous, accustomed to dirty work, able to endure hardship and shame. Ta’hsi Wu, governor of Eastern Ch‘in, spied on Shen-wu of Ch‘i with two others. They crept up to the enemy camp, learned the passwords, and passed through disguised as night-watchmen, even punishing soldiers breaking discipline. They returned with valuable information, enabling the Emperor to defeat the enemy.\n\nMaintain close relations with spies and reward them liberally, ensuring secrecy in all communication. Spies require intuitive sagacity to discern truth from falsehood. Manage them with benevolence and straightforwardness, treating them sincerely. Subtle ingenuity is needed to verify their reports and guard against their defection. Use spies subtly for every kind of business.",
+    "meta": {
+      "theme": "Espionage and Deception",
+      "region": "Ancient China",
+      "use_case": "Military Strategy",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "spying",
+        "doomed spies",
+        "surviving spies",
+        "deception",
+        "rewards",
+        "secrecy"
+      ],
+      "influence_map": [],
+      "chunk_index": 23
+    },
+    "id": "artofwar_023"
+  },
+  {
+    "section": "The Use of Spies (continued)",
+    "text": "If a spy divulges a secret prematurely, execute both the spy and the recipient of the secret. The spy is punished for the leak, while the other person is silenced to prevent further spread. Whether crushing an army, storming a city, or assassinating someone, first identify the attendants, aides-de-camp, door-keepers, and sentries of the commanding general. Commission spies to ascertain these. Seek out enemy spies, tempt them with bribes, and house them comfortably. They become converted spies, available for our service. Through converted spies, we gain information and employ local and inward spies, learning the enemy's condition and identifying those susceptible to bribery or corruption. Converted spies also enable us to use doomed spies to carry false tidings and utilize surviving spies effectively. The goal of spying is knowledge of the enemy, primarily derived from converted spies. Treat converted spies generously. The rise of the Yin (Shang) dynasty was due to I Chih (I Yin), who served under the Hsia. The rise of the Chou dynasty was due to Lu Ya (Lu Shang), who served under the Yin. These are examples of converted spies who exploited their knowledge of former masters' weaknesses. Only enlightened rulers and wise generals will use the highest intelligence for spying, achieving great results. However, reliance on spies, while yielding great results, can also cause utter destruction. Spies are crucial because they determine an army’s mobility.",
+    "meta": {
+      "theme": "Espionage and Deception",
+      "region": "Ancient China",
+      "use_case": "Military Strategy",
+      "strategic_category": [
+        "military_doctrine"
+      ],
+      "economic_category": [],
+      "civilizational_category": [],
+      "usage_tags": [
+        "spying",
+        "divulging secrets",
+        "converted spies",
+        "local spies",
+        "inward spies",
+        "doomed spies",
+        "surviving spies",
+        "knowledge of the enemy",
+        "historical examples"
+      ],
+      "influence_map": [],
+      "chunk_index": 24
+    },
+    "id": "artofwar_024"
+  }
+]

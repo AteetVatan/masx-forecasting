@@ -1,0 +1,60 @@
+{
+    "theme": [],
+    "region": [],
+    "use_case": [],
+    "strategic_category": {
+        "military_doctrine": [],
+        "geopolitical_strategy": [],
+        "national_security": [],
+        "diplomatic_posture": [],
+        "geostrategic_positioning": []
+    },
+    "economic_category": {
+        "development_models": [],
+        "resource_strategies": [],
+        "trade_tariff_systems": [],
+        "economic_warfare": []
+    },
+    "civilizational_category": {
+        "cultural_ethos": [],
+        "temporal_orientation": [],
+        "value_systems": [],
+        "historical_memory": [],
+        "civilizational_missions": []
+    },
+    "usage_tags": [],
+    "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+    },
+    "meta": {
+        "theme": "The main topic or subject of the doctrine chunk",
+        "region": "The geographic scope or area of relevance",
+        "use_case": "Practical application or scenario where the doctrine applies",
+        "strategic_category": {
+            "military_doctrine": "Principles guiding military strategy and operations",
+            "geopolitical_strategy": "Plans for achieving geopolitical objectives",
+            "national_security": "Measures to ensure the nation's safety and resilience",
+            "diplomatic_posture": "The country's diplomatic stance or behavior",
+            "geostrategic_positioning": "The placement or influence of a country in global strategy"
+        },
+        "economic_category": {
+            "development_models": "Frameworks for national or regional economic growth",
+            "resource_strategies": "Plans for managing natural and economic resources",
+            "trade_tariff_systems": "Policies on trade and tariffs",
+            "economic_warfare": "Use of economic measures as a tool of conflict or influence"
+        },
+        "civilizational_category": {
+            "cultural_ethos": "Shared cultural values and attitudes",
+            "temporal_orientation": "Focus on past, present, or future in cultural perspective",
+            "value_systems": "Core ethical or moral frameworks",
+            "historical_memory": "Collective remembrance of historical events",
+            "civilizational_missions": "Long-term goals or missions tied to civilizational identity"
+        },
+        "usage_tags": "Specific keywords or concepts for search and categorization",
+        "influence_map": {
+            "influenced_works": "Works influenced by this doctrine",
+            "modern_applications": "Current real-world uses or examples"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Iroquoisconfederacy The Great Law Of Peace",
+    "slug": "iroquoisconfederacy_the_great_law_of_peace",
+    "type": "Unknown",
+    "source_type": [
+        "pdf"
+    ],
+    "status": "raw_collected",
+    "file_path": "data\\doctrines\\raw\\Iroquoisconfederacy_the_great_law_of_peace-1.pdf",
+    "source_files": [
+        "Iroquoisconfederacy_the_great_law_of_peace-1.pdf",
+        "Iroquoisconfederacy_the_great_law_of_peace-2.pdf",
+        "Iroquoisconfederacy_the_great_law_of_peace-3.pdf"
+    ],
+    "license": "Unknown",
+    "language": "en",
+    "origin_civilization": "Unknown",
+    "strategic_category": {
+        "military_doctrine": [],
+        "geopolitical_strategy": [],
+        "national_security": [],
+        "diplomatic_posture": [],
+        "geostrategic_positioning": []
+    },
+    "economic_category": {
+        "development_models": [],
+        "resource_strategies": [],
+        "trade_tariff_systems": [],
+        "economic_warfare": []
+    },
+    "civilizational_category": {
+        "cultural_ethos": [],
+        "temporal_orientation": [],
+        "value_systems": [],
+        "historical_memory": [],
+        "civilizational_missions": []
+    },
+    "usage_tags": [],
+    "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+    },
+    "metadata_version": "1.1",
+    "notes": "Grouped from files: Iroquoisconfederacy_the_great_law_of_peace-1.pdf, Iroquoisconfederacy_the_great_law_of_peace-2.pdf, Iroquoisconfederacy_the_great_law_of_peace-3.pdf"
+}

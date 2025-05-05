@@ -1,0 +1,43 @@
+{
+    "name": "Likewar",
+    "slug": "likewar",
+    "type": "Unknown",
+    "source_type": [
+        "pdf"
+    ],
+    "status": "raw_collected",
+    "file_path": "data\\doctrines\\raw\\likewar.pdf",
+    "source_files": [
+        "likewar.pdf"
+    ],
+    "license": "Unknown",
+    "language": "en",
+    "origin_civilization": "Unknown",
+    "strategic_category": {
+        "military_doctrine": [],
+        "geopolitical_strategy": [],
+        "national_security": [],
+        "diplomatic_posture": [],
+        "geostrategic_positioning": []
+    },
+    "economic_category": {
+        "development_models": [],
+        "resource_strategies": [],
+        "trade_tariff_systems": [],
+        "economic_warfare": []
+    },
+    "civilizational_category": {
+        "cultural_ethos": [],
+        "temporal_orientation": [],
+        "value_systems": [],
+        "historical_memory": [],
+        "civilizational_missions": []
+    },
+    "usage_tags": [],
+    "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+    },
+    "metadata_version": "1.1",
+    "notes": "Grouped from files: likewar.pdf"
+}

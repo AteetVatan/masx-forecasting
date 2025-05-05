@@ -1,0 +1,106 @@
+
+
+https://api.gdeltproject.org/api/v2/doc/doc?query="war" &startdatetime=20250503070754&enddatetime=20250504070754&maxrecords=250&mode=artlist&format=json
+
+
+https://blog.gdeltproject.org/new-november-2021-gkg-2-0-themes-lookup/
+http://data.gdeltproject.org/api/v2/guides/LOOKUP-GKGTHEMES.TXT
+
+
+
+
+1) Begine MASX AI taxonomy_mapping 
+
+{
+  "Diplomacy & International Relations": {
+    "Ambassador": [],
+    "Summit": [],
+    "Peace Agreement": [],
+    "Treaty": [],
+    "Negotiations": [],
+    "Bilateral Relations": [],
+    "Multilateral Relations": [],
+    "Sanctions": []
+  }
+}
+
+
+2?1) Getting GEDLT V2Themes
+Download this file and extract all gedlt V2 themes for the file below like TAX_ETHNICITY_ARMENIAN , WB_180_FOOD_SAFETY etc
+
+TAX_ETHNICITY_ARMENIAN	1837241
+TAX_FNCACT_CIVIL_SERVANTS	1836315
+WB_528_SOLAR_ENERGY	1834801
+TAX_CHRONICDISEASE_HEART_DISEASE	1834374
+TAX_ETHNICITY_HINDU	1829098
+WB_180_FOOD_SAFETY	1827755
+TAX_ETHNICITY_INDIANS	1827720
+TAX_RELIGION_HINDU	1827240
+EPU_POLICY_DUMA	1824506
+WB_2446_CARTELS	1822848
+TAX_FNCACT_STAFF_MEMBERS	1816238
+
+
+3) Map GEDLT V2Themes to MASX AI taxonomy
+
+
+4) Query GEDLT API -->json with  childs
+
+
+'https://api.gdeltproject.org/api/v2/doc/doc?query=(ACT_FORCEPOSTURE%20OR%20LEADER%20OR%20TAX_FNCACT%20OR%20TAX_FNCACT_PRESIDENT%20OR%20USPEC_POLITICS_GENERAL1)&mode=artlist&format=json'
+
+mapping
+{
+  "Diplomacy & International Relations": {
+    "Ambassador": [
+			{
+		  "url": "https://gordonua.com/ukr/news/business/ceo-dtek-mkhp-farmak-deloua-opriljudnilo-rejtinh-kerivnikiv-kompanij-1739739.html",
+		  "url_mobile": "https://gordonua.com/amp/ukr/news/business/ceo-dtek-mkhp-farmak-deloua-opriljudnilo-rejtinh-kerivnikiv-kompanij-1739739.html",
+		  "title": "CEO ДТЕК , МХП ,  Фармак . Delo . ua оприлюднило рейтинг керівників компаній",
+		  "seendate": "20250416T231500Z",
+		  "socialimage": "",
+		  "domain": "gordonua.com",
+		  "language": "Ukrainian",
+		  "sourcecountry": "Ukraine"
+		  },
+		{},{}
+	],
+    "Summit": [],
+    "Peace Agreement": [],
+    "Treaty": [],
+    "Negotiations": [],
+    "Bilateral Relations": [],
+    "Multilateral Relations": [],
+    "Sanctions": []
+  }
+}
+
+5) web scraping each url - title content 
+
+mapping
+{
+  "Diplomacy & International Relations": {
+    "Ambassador": [
+			{
+		  "url": "https://gordonua.com/ukr/news/business/ceo-dtek-mkhp-farmak-deloua-opriljudnilo-rejtinh-kerivnikiv-kompanij-1739739.html",
+		  "url_mobile": "https://gordonua.com/amp/ukr/news/business/ceo-dtek-mkhp-farmak-deloua-opriljudnilo-rejtinh-kerivnikiv-kompanij-1739739.html",
+		  "title": "CEO ДТЕК , МХП ,  Фармак . Delo . ua оприлюднило рейтинг керівників компаній",
+		  "seendate": "20250416T231500Z",
+		  "socialimage": "",
+		  "domain": "gordonua.com",
+		  "language": "Ukrainian",
+		  "sourcecountry": "Ukraine",
+		  "scrap the content"
+		  
+		  },
+		{},{}
+	],
+    "Summit": [],
+    "Peace Agreement": [],
+    "Treaty": [],
+    "Negotiations": [],
+    "Bilateral Relations": [],
+    "Multilateral Relations": [],
+    "Sanctions": []
+  }
+}
