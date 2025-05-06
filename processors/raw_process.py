@@ -7,11 +7,12 @@ from core.config import Paths
 # CLEANED_DIR = "data/doctrines/cleaned"
 # CHUNK_DIR = "data/doctrines/chunks"
 
-class RawProcess:    
+
+class RawProcess:
     @staticmethod
     def run_all():
         print("📦 Running batch doctrine processing...")
         DoctrineMetadata.bulk_generate(Paths.RAW_DIR, Paths.METADATA_DIR)
-        DoctrineProcessor.batch_process(Paths.RAW_DIR, Paths.CLEANED_DIR, Paths.CHUNK_DIR)
-
-
+        DoctrineProcessor.batch_process(
+            Paths.RAW_DIR, Paths.CLEANED_DIR, Paths.CHUNK_DIR
+        )

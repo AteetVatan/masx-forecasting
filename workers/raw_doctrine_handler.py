@@ -1,14 +1,17 @@
 """Event handler for raw doctrine files."""
+
 from pathlib import Path
 from watchdog.events import FileSystemEventHandler
 from core.config import Paths
 from core.doctrine.metadata import DoctrineMetadata
-#from core.doctrine.processor import DoctrineProcessor
+
+# from core.doctrine.processor import DoctrineProcessor
 
 RAW_DIR = "data/doctrines/raw"
 METADATA_DIR = "data/doctrines/metadata"
 CLEANED_DIR = "data/doctrines/cleaned"
 CHUNK_DIR = "data/doctrines/chunks"
+
 
 class RawDoctrineHandler(FileSystemEventHandler):
     def on_created(self, event):
@@ -29,4 +32,4 @@ class RawDoctrineHandler(FileSystemEventHandler):
 
         # Process only the matching slug group
         DoctrineMetadata(slug, [filename], Paths.RAW_DIR, METADATA_DIR).save()
-        #DoctrineProcessor(slug, [filename], RAW_DIR, CLEANED_DIR, CHUNK_DIR).process()
+        # DoctrineProcessor(slug, [filename], RAW_DIR, CLEANED_DIR, CHUNK_DIR).process()

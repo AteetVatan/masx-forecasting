@@ -1,4 +1,4 @@
-"""Welcome to MASX AI """
+"""Welcome to MASX AI"""
 
 from workers import raw_doctrine_watcher
 
@@ -13,9 +13,5 @@ def stop_workers():
     raw_doctrine_watcher.stop()
 
 
-
-
 if __name__ == "__main__":
     print("Welcome to MASX AI")
-    
-    

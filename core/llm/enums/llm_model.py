@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class LLMModel(Enum):
     # OpenAI
     GPT_4 = "gpt-4"
@@ -14,7 +15,7 @@ class LLMModel(Enum):
 
     # Groq
     MIXTRAL = "mistral-saba-24b"
-    MIXTRAL_8X7B_32768 = "mixtral-8x7b-32768"    
+    MIXTRAL_8X7B_32768 = "mixtral-8x7b-32768"
     MISTRAL_7B_INSTRUCT = "mistral-7b-instruct"
 
     # Gemini

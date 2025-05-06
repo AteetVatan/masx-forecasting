@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 # core/workers/base.py
 class BaseWorker(ABC):
     def __init__(self, name):

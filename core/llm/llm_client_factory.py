@@ -1,4 +1,5 @@
 """LLM Client Factory"""
+
 from .openai_llm_client import OpenAILLMClient
 from .claude_llm_client import ClaudeLLMClient
 from .groq_llm_client import GroqLLMClient
@@ -8,9 +9,12 @@ from .llm_client import LLMClient
 from .enums.llm_provider import LLMProvider
 from .enums.llm_model import LLMModel
 
+
 class LLMClientFactory:
     @staticmethod
-    def get_client(provider: str, model: LLMModel, max_tokens: int = 3000, temperature: float = 0.3) -> LLMClient:
+    def get_client(
+        provider: str, model: LLMModel, max_tokens: int = 3000, temperature: float = 0.3
+    ) -> LLMClient:
         if provider == LLMProvider.OPENAI:
             return OpenAILLMClient(model, max_tokens, temperature)
         elif provider == LLMProvider.CLAUDE:

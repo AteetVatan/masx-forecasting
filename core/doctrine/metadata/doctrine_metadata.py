@@ -1,4 +1,5 @@
 """Module for DoctrineMetadata"""
+
 import json
 import re
 from pathlib import Path
@@ -7,6 +8,7 @@ from typing import List, Dict, Optional
 from collections import defaultdict
 from core.config import Paths
 
+
 class StrategicCategory(BaseModel):
     military_doctrine: List[str] = []
     geopolitical_strategy: List[str] = []
@@ -14,11 +16,13 @@ class StrategicCategory(BaseModel):
     diplomatic_posture: List[str] = []
     geostrategic_positioning: List[str] = []
 
+
 class EconomicCategory(BaseModel):
     development_models: List[str] = []
     resource_strategies: List[str] = []
     trade_tariff_systems: List[str] = []
     economic_warfare: List[str] = []
+
 
 class CivilizationalCategory(BaseModel):
     cultural_ethos: List[str] = []
@@ -27,9 +31,11 @@ class CivilizationalCategory(BaseModel):
     historical_memory: List[str] = []
     civilizational_missions: List[str] = []
 
+
 class InfluenceMap(BaseModel):
     influenced_works: List[str] = []
     modern_applications: List[str] = []
+
 
 class DoctrineMetadataModel(BaseModel):
     name: str
@@ -50,6 +56,7 @@ class DoctrineMetadataModel(BaseModel):
     metadata_version: str = "1.1"
     notes: Optional[str] = ""
 
+
 class DoctrineMetadata:
     STORAGE_DIR = Paths.METADATA_DIR
 
@@ -63,10 +70,12 @@ class DoctrineMetadata:
         metadata = DoctrineMetadataModel(
             name=self.slug.replace("_", " ").title(),
             slug=self.slug,
-            source_type=list(set(["pdf" if f.endswith(".pdf") else "text" for f in self.files])),
+            source_type=list(
+                set(["pdf" if f.endswith(".pdf") else "text" for f in self.files])
+            ),
             file_path=str(self.raw_dir / self.files[0]),
             source_files=self.files,
-            notes=f"Grouped from files: {', '.join(self.files)}"
+            notes=f"Grouped from files: {', '.join(self.files)}",
         )
         return metadata.dict()
 
@@ -92,7 +101,7 @@ class DoctrineMetadata:
 
     @staticmethod
     def extract_slug(filename: str) -> str:
-        return re.sub(r'[-_](\d+)$', '', Path(filename).stem.lower())
+        return re.sub(r"[-_](\d+)$", "", Path(filename).stem.lower())
 
     @classmethod
     def bulk_generate(cls, raw_dir: str, metadata_dir: Optional[str] = None):

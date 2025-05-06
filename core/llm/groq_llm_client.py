@@ -11,10 +11,16 @@ import json5
 
 # ============================
 # Groq Implementation
-# ============================  
+# ============================
+
 
 class GroqLLMClient(LLMClient):
-    def __init__(self, model: LLMModel = LLMModel.MIXTRAL, max_tokens: int = 3000, temperature: float = 0.3):
+    def __init__(
+        self,
+        model: LLMModel = LLMModel.MIXTRAL,
+        max_tokens: int = 3000,
+        temperature: float = 0.3,
+    ):
         super().__init__(model, max_tokens, temperature)
         self.api_key = os.getenv("GROQ_API_KEY")
 
@@ -24,23 +30,25 @@ class GroqLLMClient(LLMClient):
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
-        
+
         response = httpx.post(
             url=os.getenv("GROQ_URL"),
             headers={
                 "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
             json={
                 "model": self.model.value,
                 "messages": messages,
                 "temperature": self.temperature,
-                "max_tokens": self.max_tokens
-            }
+                "max_tokens": self.max_tokens,
+            },
         )
         return response.json()["choices"][0]["message"]["content"]
 
-    def call_batch(self, batch_texts: List[str], embedded_prompt: str, system_prompt: str = None) -> List[dict]:
+    def call_batch(
+        self, batch_texts: List[str], embedded_prompt: str, system_prompt: str = None
+    ) -> List[dict]:
         prompt = embedded_prompt + "\n\n" + "\n\n".join(batch_texts)
         raw_text = self.call(prompt, system_prompt=system_prompt)
 
@@ -49,7 +57,7 @@ class GroqLLMClient(LLMClient):
             return {"type": "text", "response": raw_text}  # fallback
 
         return {"type": "json", "response": extracted_json}
-    
+
     @staticmethod
     def extract_json_array(text: str):
         try:

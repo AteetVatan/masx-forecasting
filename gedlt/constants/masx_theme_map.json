@@ -1,0 +1,57 @@
+{
+    "strategic_category": {
+        "military_doctrine": [
+            "kill"
+        ],
+        "geopolitical_strategy": [],
+        "national_security": [
+            "uspec_politics_general1",
+            "crisislex_c07_safety",
+            "general_government",
+            "uspec_policy1",
+            "manmade_disaster_implied",
+            "tax_fncact_president"
+        ],
+        "diplomatic_posture": [
+            "leader"
+        ],
+        "geostrategic_positioning": []
+    },
+    "economic_category": {
+        "development_models": [
+            "tax_fncact",
+            "epu_policy",
+            "wb_696_public_sector_management",
+            "general_health",
+            "wb_621_health_nutrition_and_population",
+            "medical",
+            "education",
+            "epu_economy_historic",
+            "wb_133_information_and_communication_technologies",
+            "wb_678_digital_government",
+            "tax_worldmammals"
+        ],
+        "resource_strategies": [],
+        "trade_tariff_systems": [],
+        "economic_warfare": []
+    },
+    "civilizational_category": {
+        "cultural_ethos": [
+            "tax_ethnicity",
+            "tax_worldlanguages"
+        ],
+        "temporal_orientation": [],
+        "value_systems": [],
+        "historical_memory": [],
+        "civilizational_missions": [
+            "wb_2432_fragility_conflict_and_violence"
+        ]
+    },
+    "usage_tags": [
+        "media_msm"
+    ],
+    "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+    }
+}

@@ -1,4 +1,5 @@
 """Chunk and Enrich"""
+
 import json
 import os
 from openai import OpenAI
@@ -23,10 +24,12 @@ COST_LOG_PATH = Paths.CHUNK_DIR / "cost_log.json"
 # Initialize OpenAI client with API key
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+
 class ChunkAndEnrich:
     """
     This class is used to create chunks and enrich the metadata of a given doctrine.
     """
+
     CHUNCK_AND_ENRICH_PROMPT = """
     You are a highly trained geopolitical doctrine analyst embedded within the MASX AI strategic intelligence system. 
     Your knowledge spans classical military strategy, 21st-century hybrid warfare, Cold War deterrence theory, post-colonial statecraft, 
@@ -92,36 +95,31 @@ class ChunkAndEnrich:
     def _call_openai_api(cls, model: str, messages: list, temperature: float = 0.3):
         try:
             response = client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature
+                model=model, messages=messages, temperature=temperature
             )
             return response
         except Exception as e:
             print(f"Error calling OpenAI API: {str(e)}")
             raise
 
-
-
     @classmethod
-    def _call_claude_opus(cls, prompt: str, model: str = "claude-3-opus-20240229", max_tokens: int = 3000):
+    def _call_claude_opus(
+        cls, prompt: str, model: str = "claude-3-opus-20240229", max_tokens: int = 3000
+    ):
         try:
             url = "https://api.anthropic.com/v1/messages"
             headers = {
-                "x-api-key": os.getenv("CLAUDE_API_KEY"),  # From .env or secrets manager
+                "x-api-key": os.getenv(
+                    "CLAUDE_API_KEY"
+                ),  # From .env or secrets manager
                 "anthropic-version": "2023-06-01",
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             }
             payload = {
                 "model": model,
                 "max_tokens": max_tokens,
                 "temperature": 0.3,
-                "messages": [
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ]
+                "messages": [{"role": "user", "content": prompt}],
             }
             response = httpx.post(url, headers=headers, json=payload, timeout=90)
             response.raise_for_status()
@@ -129,24 +127,24 @@ class ChunkAndEnrich:
         except Exception as e:
             print(f"❌ Claude API error [{model}]: {e}")
             raise
-   
 
-    #ChunkAndEnrich.chunk_and_enrich_process(slug="deep_state", model="claude-3-opus", provider="claude")
-    #ChunkAndEnrich.chunk_and_enrich_process(slug="sun_tzu", model="gpt-4", provider="openai")
+    # ChunkAndEnrich.chunk_and_enrich_process(slug="deep_state", model="claude-3-opus", provider="claude")
+    # ChunkAndEnrich.chunk_and_enrich_process(slug="sun_tzu", model="gpt-4", provider="openai")
 
     @classmethod
-    def chunk_and_enrich_process(cls, slug: str, embedded_prompt: str, system_prompt: str):       
+    def chunk_and_enrich_process(
+        cls, slug: str, embedded_prompt: str, system_prompt: str
+    ):
 
         cleaned_path = Paths.CLEANED_DIR / f"{slug}.md"
         chunk_path = Paths.CHUNK_DIR / f"{slug}_chunks.json"
-        meta_path = Paths.METADATA_DIR / f"{slug}.json"        
+        meta_path = Paths.METADATA_DIR / f"{slug}.json"
 
         # with open(Paths.CHUNK_DIR / "artofwar_chunks.json", "r", encoding="utf-8") as f:
         #     all_chunks = json.load(f)
 
         # cls.enrich_metadata( Paths.METADATA_DIR / "artofwar.json", all_chunks)
-         
-         
+
         if chunk_path.exists():
             print(f"⏩ Skipping {slug} – already chunked.")
             return
@@ -155,70 +153,79 @@ class ChunkAndEnrich:
             full_text = f.read()
 
         segments = cls.split_text_for_gpt(full_text, max_tokens=1000)
-        segment_batches = [segments[i:i + 3] for i in range(0, len(segments), 3)]
+        segment_batches = [segments[i : i + 3] for i in range(0, len(segments), 3)]
 
-        providers_to_test = [                
-                (LLMProvider.GEMINI, LLMModel.GEMINI_PRO),
-                (LLMProvider.COHERE, LLMModel.COMMAND_R_PLUS),
-                (LLMProvider.OPENAI, LLMModel.GPT_4_TURBO),
-                (LLMProvider.CLAUDE, LLMModel.CLAUDE_SONNET_5),
-                (LLMProvider.GROQ, LLMModel.MIXTRAL)
-            ]
-            
-        providers = [                    
-            (LLMProvider.GEMINI, LLMModel.GEMINI_PRO),      
-            (LLMProvider.OPENAI, LLMModel.GPT_4_TURBO),                            
+        providers_to_test = [
+            (LLMProvider.GEMINI, LLMModel.GEMINI_PRO),
+            (LLMProvider.COHERE, LLMModel.COMMAND_R_PLUS),
+            (LLMProvider.OPENAI, LLMModel.GPT_4_TURBO),
             (LLMProvider.CLAUDE, LLMModel.CLAUDE_SONNET_5),
-            (LLMProvider.COHERE, LLMModel.COMMAND_R_PLUS)
+            (LLMProvider.GROQ, LLMModel.MIXTRAL),
         ]
-        
+
+        providers = [
+            (LLMProvider.GEMINI, LLMModel.GEMINI_PRO),
+            (LLMProvider.OPENAI, LLMModel.GPT_4_TURBO),
+            (LLMProvider.CLAUDE, LLMModel.CLAUDE_SONNET_5),
+            (LLMProvider.COHERE, LLMModel.COMMAND_R_PLUS),
+        ]
+
         clients = []
         for provider, model in providers:
-            client = LLMClientFactory.get_client(provider=provider, model=model)               
+            client = LLMClientFactory.get_client(provider=provider, model=model)
             clients.append(client)
 
-        llm_client_index = 0       
+        llm_client_index = 0
         all_chunks = []
         for batch_index, batch in enumerate(segment_batches):
             for llm_client_index in range(len(clients)):
                 try:
-                    print(f"{providers[llm_client_index][0].value} - {providers[llm_client_index][1].value}")
-                    #print(f"✅ [{slug}] Processed batch {batch_index + 1}/{len(segment_batches)}")
-                    print(f"✅ [{slug}] Processed batch {batch_index + 1}/{len(segment_batches)}")
-                    
-                    response = clients[llm_client_index].call_batch(batch_texts=batch, embedded_prompt=embedded_prompt, system_prompt=system_prompt)
-                    
+                    print(
+                        f"{providers[llm_client_index][0].value} - {providers[llm_client_index][1].value}"
+                    )
+                    # print(f"✅ [{slug}] Processed batch {batch_index + 1}/{len(segment_batches)}")
+                    print(
+                        f"✅ [{slug}] Processed batch {batch_index + 1}/{len(segment_batches)}"
+                    )
+
+                    response = clients[llm_client_index].call_batch(
+                        batch_texts=batch,
+                        embedded_prompt=embedded_prompt,
+                        system_prompt=system_prompt,
+                    )
+
                     if response["type"] == "json":
                         chunks = response["response"]
                     else:
-                        chunks = cls.convert_doctrine_text_to_json(response["response"])                                        
-                    
+                        chunks = cls.convert_doctrine_text_to_json(response["response"])
+
                     if len(chunks) == 0:
                         raise Exception("No chunks returned")
                     all_chunks.extend(chunks)
-                    
-                    #print(f"✅ [{slug}] Processed batch {batch_index + 1}/{len(segment_batches)} (attempt {attempt})")
-                  
-                    
-                    #Wait for 30 seconds before next batch as most llm providers have a rate limit
+
+                    # print(f"✅ [{slug}] Processed batch {batch_index + 1}/{len(segment_batches)} (attempt {attempt})")
+
+                    # Wait for 30 seconds before next batch as most llm providers have a rate limit
                     time.sleep(5)
                     break
-                    
+
                 except Exception as e:
                     print(f"⚠️ Failed to process batch {batch_index + 1} : {e}")
-                    #print(f"⚠️ Failed to process batch {batch_index + 1} : {e}")                
+                    # print(f"⚠️ Failed to process batch {batch_index + 1} : {e}")
                     if llm_client_index == len(clients) - 1:
-                        print(f"❌ Skipping batch {batch_index + 1} after all LLM failed attempts.")
+                        print(
+                            f"❌ Skipping batch {batch_index + 1} after all LLM failed attempts."
+                        )
 
         for idx, chunk in enumerate(all_chunks):
-            chunk['id'] = f"{slug}_{str(idx + 1).zfill(3)}"
-            chunk['meta']['chunk_index'] = idx + 1
+            chunk["id"] = f"{slug}_{str(idx + 1).zfill(3)}"
+            chunk["meta"]["chunk_index"] = idx + 1
 
         with open(chunk_path, "w", encoding="utf-8") as f:
             json.dump(all_chunks, f, indent=2, ensure_ascii=False)
 
         # Enrich metadata
-        #cls.enrich_metadata(meta_path, all_chunks)
+        # cls.enrich_metadata(meta_path, all_chunks)
 
         # cost_per_chunk = 0.0105 # Modify cost based on model
         # total_cost = round(len(all_chunks) * cost_per_chunk, 4)
@@ -235,16 +242,12 @@ class ChunkAndEnrich:
 
         # print(f"✅ [{slug}] {len(all_chunks)} AI chunks tagged and metadata enriched. Est. cost: ${total_cost}")
 
-
-
-
     @classmethod
     def split_text_for_gpt(cls, text: str, max_tokens: int = 3000) -> List[str]:
         enc = get_encoding("cl100k_base")
         tokens = enc.encode(text)
-        chunks = [tokens[i:i + max_tokens] for i in range(0, len(tokens), max_tokens)]
+        chunks = [tokens[i : i + max_tokens] for i in range(0, len(tokens), max_tokens)]
         return [enc.decode(chunk) for chunk in chunks]
-    
 
     @classmethod
     def enrich_metadata(cls, meta_path: Path, all_chunks: List[dict]):
@@ -272,30 +275,31 @@ class ChunkAndEnrich:
 
             strategic["strategic_category"].update(meta.get("strategic_category", {}))
             economic["economic_category"].update(meta.get("economic_category", {}))
-            civilizational["civilizational_category"].update(meta.get("civilizational_category", {}))
-
+            civilizational["civilizational_category"].update(
+                meta.get("civilizational_category", {})
+            )
 
             if "influence_map" in meta and isinstance(meta["influence_map"], dict):
-                influence = meta.get("influence_map", {})                
+                influence = meta.get("influence_map", {})
                 influenced_works.update(influence.get("influenced_works", []))
-                modern_apps.update(influence.get("modern_applications", []))                    
-
+                modern_apps.update(influence.get("modern_applications", []))
 
         doctrine_meta["strategic_category"] = list(set().union(*strategic.values()))
         doctrine_meta["economic_category"] = list(set().union(*economic.values()))
-        doctrine_meta["civilizational_category"] = list(set().union(*civilizational.values()))
+        doctrine_meta["civilizational_category"] = list(
+            set().union(*civilizational.values())
+        )
         doctrine_meta["usage_tags"] = list(usage_tags)
         doctrine_meta["origin_civilization"] = list(regions)
         doctrine_meta["influence_map"] = {
             "influenced_works": list(influenced_works),
-            "modern_applications": list(modern_apps)
+            "modern_applications": list(modern_apps),
         }
         doctrine_meta["status"] = "tagged"
 
         with open(meta_path, "w", encoding="utf-8") as f:
             json.dump(doctrine_meta, f, indent=2, ensure_ascii=False)
-            
-    
+
     @classmethod
     def convert_doctrine_text_to_json(cls, raw_text: str):
         """
@@ -306,10 +310,12 @@ class ChunkAndEnrich:
 
         Always returns fully structured chunk dicts with all MASX meta fields.
         """
-        
+
         chunks = []
         # 1️⃣ Try parsing JSON block
-        json_block_match = re.search(r'\{[\s\n]*"section"\s*:[\s\S]+?\}', raw_text, re.DOTALL)
+        json_block_match = re.search(
+            r'\{[\s\n]*"section"\s*:[\s\S]+?\}', raw_text, re.DOTALL
+        )
         if json_block_match:
             try:
                 parsed = ChunkAndEnrich.safe_parse_llm_chunk(json_block_match.group())
@@ -324,53 +330,59 @@ class ChunkAndEnrich:
         matches = re.findall(pattern, raw_text, re.DOTALL)
 
         for idx, (section, text) in enumerate(matches, 1):
-            chunks.append({
-                "id": f"chunk_{idx:03}",
-                "section": section.strip(),
-                "text": text.strip(),
-                "meta": {
-                    "theme": "unspecified",
-                    "region": "unspecified",
-                    "use_case": "doctrine_selector",
-                    "strategic_category": {},
-                    "economic_category": {},
-                    "civilizational_category": {},
-                    "usage_tags": [],
-                    "influence_map": {
-                        "influenced_works": [],
-                        "modern_applications": []
+            chunks.append(
+                {
+                    "id": f"chunk_{idx:03}",
+                    "section": section.strip(),
+                    "text": text.strip(),
+                    "meta": {
+                        "theme": "unspecified",
+                        "region": "unspecified",
+                        "use_case": "doctrine_selector",
+                        "strategic_category": {},
+                        "economic_category": {},
+                        "civilizational_category": {},
+                        "usage_tags": [],
+                        "influence_map": {
+                            "influenced_works": [],
+                            "modern_applications": [],
+                        },
+                        "chunk_index": idx,
                     },
-                    "chunk_index": idx
                 }
-            })
+            )
 
         return chunks
 
-
     @staticmethod
     def normalize_chunk(parsed: dict, idx: int):
-            """Ensure all required MASX fields exist"""
-            return {
-                "id": f"chunk_{idx:03}",
-                "section": str(parsed.get("section", "")).strip(),
-                "text": str(parsed.get("text", "")).strip(),
-                "meta": {
-                    "theme": parsed.get("meta", {}).get("theme", "unspecified"),
-                    "region": parsed.get("meta", {}).get("region", "unspecified"),
-                    "use_case": parsed.get("meta", {}).get("use_case", "doctrine_selector"),
-                    "strategic_category": parsed.get("meta", {}).get("strategic_category", {}),
-                    "economic_category": parsed.get("meta", {}).get("economic_category", {}),
-                    "civilizational_category": parsed.get("meta", {}).get("civilizational_category", {}),
-                    "usage_tags": parsed.get("meta", {}).get("usage_tags", []),
-                    "influence_map": parsed.get("meta", {}).get("influence_map", {
-                        "influenced_works": [],
-                        "modern_applications": []
-                    }),
-                    "chunk_index": idx
-                }
-            }
-            
-    @staticmethod        
+        """Ensure all required MASX fields exist"""
+        return {
+            "id": f"chunk_{idx:03}",
+            "section": str(parsed.get("section", "")).strip(),
+            "text": str(parsed.get("text", "")).strip(),
+            "meta": {
+                "theme": parsed.get("meta", {}).get("theme", "unspecified"),
+                "region": parsed.get("meta", {}).get("region", "unspecified"),
+                "use_case": parsed.get("meta", {}).get("use_case", "doctrine_selector"),
+                "strategic_category": parsed.get("meta", {}).get(
+                    "strategic_category", {}
+                ),
+                "economic_category": parsed.get("meta", {}).get(
+                    "economic_category", {}
+                ),
+                "civilizational_category": parsed.get("meta", {}).get(
+                    "civilizational_category", {}
+                ),
+                "usage_tags": parsed.get("meta", {}).get("usage_tags", []),
+                "influence_map": parsed.get("meta", {}).get(
+                    "influence_map", {"influenced_works": [], "modern_applications": []}
+                ),
+                "chunk_index": idx,
+            },
+        }
+
+    @staticmethod
     def safe_parse_llm_chunk(raw_json_str: str):
         """
         Try to safely parse a JSON chunk from LLM.
@@ -381,31 +393,31 @@ class ChunkAndEnrich:
 
         # Step 1: Clean the input
         raw = raw_json_str.strip()
-        
+
         # Remove any markdown code block markers
-        raw = re.sub(r'```json\s*|\s*```', '', raw)
-        
+        raw = re.sub(r"```json\s*|\s*```", "", raw)
+
         # Remove any leading/trailing non-JSON content
-        raw = re.sub(r'^[^{]*', '', raw)  # Remove everything before first {
-        raw = re.sub(r'[^}]*$', '', raw)  # Remove everything after last }
-        
+        raw = re.sub(r"^[^{]*", "", raw)  # Remove everything before first {
+        raw = re.sub(r"[^}]*$", "", raw)  # Remove everything after last }
+
         # Step 2: Fix common JSON issues
         # Remove trailing commas
-        raw = re.sub(r',\s*([}\]])', r'\1', raw)
-        
+        raw = re.sub(r",\s*([}\]])", r"\1", raw)
+
         # Fix missing quotes around keys
-        raw = re.sub(r'([{,]\s*)(\w+)(\s*:)', r'\1"\2"\3', raw)
-        
+        raw = re.sub(r"([{,]\s*)(\w+)(\s*:)", r'\1"\2"\3', raw)
+
         # Fix single quotes to double quotes
         raw = re.sub(r"'", '"', raw)
-        
+
         # Step 3: Balance braces
-        open_braces = raw.count('{')
-        close_braces = raw.count('}')
+        open_braces = raw.count("{")
+        close_braces = raw.count("}")
         if close_braces < open_braces:
-            raw += '}' * (open_braces - close_braces)
+            raw += "}" * (open_braces - close_braces)
         elif close_braces > open_braces:
-            raw = '{' * (close_braces - open_braces) + raw
+            raw = "{" * (close_braces - open_braces) + raw
 
         # Step 4: Try parsing with increasing levels of leniency
         try:
@@ -413,8 +425,8 @@ class ChunkAndEnrich:
         except json.JSONDecodeError:
             try:
                 # Try parsing as a list of chunks
-                if not raw.startswith('['):
-                    raw = f'[{raw}]'
+                if not raw.startswith("["):
+                    raw = f"[{raw}]"
                 return json.loads(raw)[0]  # Take first chunk if it's a list
             except json.JSONDecodeError:
                 try:
@@ -427,10 +439,10 @@ class ChunkAndEnrich:
                             "meta": {
                                 "theme": "unspecified",
                                 "region": "unspecified",
-                                "use_case": "doctrine_selector"
-                            }
+                                "use_case": "doctrine_selector",
+                            },
                         }
                 except Exception:
                     pass
-                
+
         return None

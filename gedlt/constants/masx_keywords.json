@@ -1,0 +1,27 @@
+{
+    "strategic_category": {
+        "military_doctrine": [],
+        "geopolitical_strategy": [],
+        "national_security": [],
+        "diplomatic_posture": [],
+        "geostrategic_positioning": []
+    },
+    "economic_category": {
+        "development_models": [],
+        "resource_strategies": [],
+        "trade_tariff_systems": [],
+        "economic_warfare": []
+    },
+    "civilizational_category": {
+        "cultural_ethos": [],
+        "temporal_orientation": [],
+        "value_systems": [],
+        "historical_memory": [],
+        "civilizational_missions": []
+    },
+    "usage_tags": [],
+    "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+    }
+}

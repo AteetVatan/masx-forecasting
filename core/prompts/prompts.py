@@ -1,14 +1,13 @@
+class Prompts:
 
-class Prompts:    
-    
     SYSTEM_ROLE_PROMPT = ""
     SYSTEM_ROLE_PROMPT_V1 = """
         You are an expert AI in geopolitical strategy and civilizational intelligence.
         Analyze, chunk, and tag the following doctrine text.
         """
-    
+
     EMBEDDED_CHUNK_TAGGING_PROMPT = """Split text into ≤500-word doctrine chunks. Return:[{"section":...,"text":...,"meta":{"theme","region","use_case","strategic_category":["military_doctrine","geopolitical_strategy","national_security","diplomatic_posture","geostrategic_positioning"],"economic_category":["development_models","resource_strategies","trade_tariff_systems","economic_warfare"],"civilizational_category":["cultural_ethos","temporal_orientation","value_systems","historical_memory","civilizational_missions"],"usage_tags","influence_map":["influenced_works","modern_applications"]}}]"""
-    
+
     EMBEDDED_CHUNK_TAGGING_PROMPT_MINI_v1 = """
     Classify the following text into semantically coherent doctrine chunks (≤500 words each).
     For each chunk, return:
@@ -24,10 +23,7 @@ class Prompts:
     }
     Output only the JSON array.
     """
-    
-    
-    
-    
+
     EMBEDDED_CHUNK_TAGGING_PROMPT_MINI_v0 = """
         You are an AI trained in geopolitical doctrine analysis.
 
@@ -55,12 +51,11 @@ class Prompts:
 
         Only output the JSON array, nothing else.
         """
-        
+
     SYSTEM_ROLE_PROMPT_OLD = """
         You are an expert AI in geopolitical strategy and civilizational intelligence.
         Analyze, chunk, and tag the following doctrine text.
         """
-    
 
     EMBEDDED_CHUNK_TAGGING_PROMPT_OLD = """
         You are an elite geopolitical analyst.
