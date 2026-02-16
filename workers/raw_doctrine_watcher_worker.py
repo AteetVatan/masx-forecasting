@@ -1,26 +1,23 @@
-# workers/raw_doctrine_handler.py
-from core.workers.base_worker import BaseWorker
-from core.handlers.raw_doctrine_handler import RawDoctrineHandler
-from pathlib import Path
+from .base_worker import BaseWorker
+from .raw_doctrine_handler import RawDoctrineHandler
+from core.config import Paths
 from watchdog.observers import Observer
 import time
 
-RAW_DIR = "data/doctrines/raw"
-METADATA_DIR = "data/doctrines/metadata"
-CLEANED_DIR = "data/doctrines/cleaned"
-CHUNK_DIR = "data/doctrines/chunks"
-
 
 class RawDoctrineWatcherWorker(BaseWorker):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__(name="RawDoctrineWatcher")
-        self.observer = None
+        self.observer: Observer | None = None
 
-    def start(self):
-        self.log("👀 Starting file watcher...")
-        path = Path(RAW_DIR)
+    def start(self) -> None:
+        self.log("Starting file watcher...")
         self.observer = Observer()
-        self.observer.schedule(RawDoctrineHandler(), path=str(path), recursive=False)
+        self.observer.schedule(
+            RawDoctrineHandler(),
+            path=str(Paths.RAW_DIR),
+            recursive=False,
+        )
         self.observer.start()
 
         try:
@@ -29,9 +26,9 @@ class RawDoctrineWatcherWorker(BaseWorker):
         except KeyboardInterrupt:
             self.stop()
 
-    def stop(self):
+    def stop(self) -> None:
         if self.observer:
-            self.log("🛑 Stopping file watcher...")
+            self.log("Stopping file watcher...")
             self.observer.stop()
             self.observer.join()
             self.observer = None

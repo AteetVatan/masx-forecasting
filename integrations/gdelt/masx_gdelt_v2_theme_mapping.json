@@ -1,0 +1,117 @@
+{
+    "strategic_category": {
+        "military_doctrine": [
+            "MILITARY_CAPABILITY",
+            "MIL_MILITARY_EXERCISE",
+            "MIL_MILITARY_PLANNING",
+            "MIL_MILITARY_WEAPONS",
+            "MIL_MILITARY_LOGISTICS",
+            "MIL_NUCLEAR_WEAPONS"
+        ],
+        "geopolitical_strategy": [
+            "GOV_GOVERNMENT_POLICY",
+            "POLITICAL_UNREST",
+            "ELECTION_CAMPAIGN",
+            "NATO",
+            "WB_2432_FRAGILITY_CONFLICT_AND_VIOLENCE",
+            "INT_RELATIONS"
+        ],
+        "national_security": [
+            "SECURITY_SERVICES",
+            "CYBER_SECURITY",
+            "TERRORISM",
+            "COUNTER_TERRORISM",
+            "BORDER_CONTROL",
+            "EMERGENCY_RESPONSE"
+        ],
+        "diplomatic_posture": [
+            "DIPLOMACY",
+            "INT_DIPLOMATIC_RELATIONS",
+            "PEACE_TALKS",
+            "TREATIES",
+            "SANCTIONS"
+        ],
+        "geostrategic_positioning": [
+            "GEOLOCATION",
+            "RESOURCE_CONTROL",
+            "SEA_LANES",
+            "AIRSPACE_CONTROL",
+            "TERRITORIAL_DISPUTES"
+        ]
+    },
+    "economic_category": {
+        "development_models": [
+            "ECON_DEVELOPMENT",
+            "POVERTY_ALLEVIATION",
+            "INFRASTRUCTURE",
+            "SMART_CITIES",
+            "WB_2433_HUMAN_DEVELOPMENT"
+        ],
+        "resource_strategies": [
+            "NATURAL_RESOURCES",
+            "WATER_MANAGEMENT",
+            "ENERGY_POLICY",
+            "AGRICULTURAL_POLICY",
+            "MINERAL_EXTRACTION"
+        ],
+        "trade_tariff_systems": [
+            "TRADE_AGREEMENTS",
+            "TARIFFS",
+            "EXPORT_CONTROLS",
+            "IMPORT_CONTROLS",
+            "ECONOMIC_SANCTIONS"
+        ],
+        "economic_warfare": [
+            "ECONOMIC_SANCTIONS",
+            "FINANCIAL_MARKET_DISRUPTIONS",
+            "SUPPLY_CHAIN_ATTACKS",
+            "CYBER_ECONOMIC_THREATS",
+            "BOYCOTTS"
+        ]
+    },
+    "civilizational_category": {
+        "cultural_ethos": [
+            "RELIGIOUS_IDENTITY",
+            "CULTURAL_IDENTITY",
+            "SOCIAL_VALUES",
+            "TRADITIONAL_PRACTICES",
+            "INTERCULTURAL_RELATIONS"
+        ],
+        "temporal_orientation": [
+            "HISTORICAL_COMMEMORATION",
+            "FUTURE_VISION",
+            "INNOVATION_POLICY",
+            "PRESERVATION_EFFORTS"
+        ],
+        "value_systems": [
+            "HUMAN_RIGHTS",
+            "JUSTICE_REFORM",
+            "ETHICAL_DEBATES",
+            "SOCIAL_JUSTICE"
+        ],
+        "historical_memory": [
+            "GENOCIDE",
+            "WAR_MEMORY",
+            "MONUMENTS",
+            "ANNIVERSARIES"
+        ],
+        "civilizational_missions": [
+            "SPACE_EXPLORATION",
+            "GLOBAL_HEALTH",
+            "CLIMATE_ACTION",
+            "EDUCATION_FOR_ALL",
+            "POVERTY_ERADICATION"
+        ]
+    },
+    "usage_tags": [
+        "ENV_CLIMATECHANGE",
+        "ECON_INFLATION",
+        "DISASTERS",
+        "MIGRATION",
+        "POLITICAL_UNREST"
+    ],
+    "influence_map": {
+        "influenced_works": [],
+        "modern_applications": []
+    }
+}

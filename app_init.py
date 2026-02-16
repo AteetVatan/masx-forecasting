@@ -1,18 +1,19 @@
-"""Welcome to MASX AI application init"""
+import logging
 
-import os
 from dotenv import load_dotenv
 
-
+from core.config.log import setup_logging
 from processors.raw_process import RawProcess
 
-load_dotenv()
+logger = logging.getLogger(__name__)
 
 
-def init_app():
+def main() -> None:
+    load_dotenv()
+    setup_logging()
+    logger.info("Initializing MASX AI")
     RawProcess.run_all()
 
 
 if __name__ == "__main__":
-    # Load environment variables from .env file
-    init_app()
+    main()

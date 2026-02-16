@@ -1,38 +1,32 @@
-"""Module to create, read and write JSON data"""
-
 import json
-import os
+import logging
+from pathlib import Path
 
-from .logs_helper import LogsHelper
+logger = logging.getLogger(__name__)
 
 
 class JsonFileHelper:
-    """Helper Class responsible for JSON file operations."""
+    @staticmethod
+    def read_data(file_path: str | Path) -> dict | list | None:
+        path = Path(file_path)
+        try:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            logger.warning("File not found: %s", path)
+            return None
+        except json.JSONDecodeError as e:
+            logger.error("Invalid JSON in %s: %s", path, e)
+            return None
 
     @staticmethod
-    def read_data(file_path):
-        """Method to read JSON data."""
-        d = None
+    def write_data(file_path: str | Path, data: dict | list) -> bool:
+        path = Path(file_path)
         try:
-            with open(file_path, mode="r", encoding="utf-8") as data:
-                d = json.load(data)
-        except FileNotFoundError as f:
-            LogsHelper.error(f)
-            raise f
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            return True
         except IOError as e:
-            LogsHelper.error("I/O error occurred: ", os.strerror(e.errno))
-            raise e
-        return d
-
-    @staticmethod
-    def write_data(data, file_path):
-        """Method to write JSON data to file"""
-        try:
-            if data is None:
-                data = {}
-            with open(file_path, mode="w", encoding="utf-8") as file:
-                json.dump(data, file, indent=4)
-        except FileNotFoundError as f:
-            LogsHelper.error(f)
-        except IOError as e:
-            LogsHelper.error("I/O error occurred: ", os.strerror(e.errno))
+            logger.error("Failed to write %s: %s", path, e)
+            return False

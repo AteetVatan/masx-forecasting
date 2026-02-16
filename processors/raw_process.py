@@ -1,18 +1,15 @@
-from core.doctrine.metadata import DoctrineMetadata
-from core.doctrine.processor import DoctrineProcessor
-from core.config import Paths
+import logging
 
-# RAW_DIR = "data/doctrines/raw"
-# METADATA_DIR = "data/doctrines/metadata"
-# CLEANED_DIR = "data/doctrines/cleaned"
-# CHUNK_DIR = "data/doctrines/chunks"
+from core.doctrine.metadata.doctrine_metadata import DoctrineMetadata
+from core.doctrine.processor.doctrine_processor import DoctrineProcessor
+
+logger = logging.getLogger(__name__)
 
 
 class RawProcess:
     @staticmethod
-    def run_all():
-        print("📦 Running batch doctrine processing...")
-        DoctrineMetadata.bulk_generate(Paths.RAW_DIR, Paths.METADATA_DIR)
-        DoctrineProcessor.batch_process(
-            Paths.RAW_DIR, Paths.CLEANED_DIR, Paths.CHUNK_DIR
-        )
+    def run_all() -> None:
+        logger.info("Starting raw doctrine processing")
+        DoctrineMetadata.bulk_generate()
+        DoctrineProcessor.batch_process()
+        logger.info("Raw doctrine processing complete")

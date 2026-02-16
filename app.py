@@ -1,17 +1,22 @@
-"""Welcome to MASX AI"""
+import logging
 
-from workers import raw_doctrine_watcher
+from workers import RawDoctrineWatcherWorker
+
+logger = logging.getLogger(__name__)
+
+_watcher = RawDoctrineWatcherWorker()
 
 
-def start_workers():
-    print("Starting workers")
-    raw_doctrine_watcher.start()
+def start_workers() -> None:
+    logger.info("Starting workers")
+    _watcher.start()
 
 
-def stop_workers():
-    print("Stopping workers")
-    raw_doctrine_watcher.stop()
+def stop_workers() -> None:
+    logger.info("Stopping workers")
+    _watcher.stop()
 
 
 if __name__ == "__main__":
-    print("Welcome to MASX AI")
+    logging.basicConfig(level=logging.INFO)
+    logger.info("Welcome to MASX AI")
